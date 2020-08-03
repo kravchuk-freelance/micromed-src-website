@@ -1,0 +1,224 @@
+.catalog {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.41% 2.24%;
+        border-bottom: 1px solid $gray_1;
+    }
+
+    &__title {
+        @include adaptiv-font(22, 27, 14, 17, "Montserrat-Bold");
+        // @include font(22px, 27px, "Montserrat-Bold");
+
+        padding: 10.16% 7.03% 10.16% 11.2%;
+        background-color: $gray_12;
+        color: $black_0;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__main {
+        width: 100%;
+
+        .pagination {
+
+            &__list {
+                border-top: 1px solid $gray_1;
+                border-bottom: 1px solid $gray_1;
+            }
+        }
+    }
+
+    &__nav {
+        border-left: 1px solid $gray_1;
+
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        }
+
+        &_item {
+            padding: 20px;
+            border-right: 1px solid $gray_1;
+            border-bottom: 1px solid $gray_1;
+        }
+
+        &_link {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+
+                .catalog__nav_img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &_photo {
+            position: relative;
+            width: 63.23%;
+            padding-bottom: 63.23%;
+            margin: 0 auto 18px;
+            overflow: hidden;
+        }
+
+        &_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        &_title {
+            @include adaptiv-font(14, 17, 12, 14, "Montserrat-Bold");
+            // @include font(14px, 17px, "Montserrat-Bold");
+
+            color: $black_0;
+            text-align: center;
+        }
+    }
+
+    .product {
+        border-left: 1px solid $gray_1;
+        border-top: 1px solid $gray_1;
+
+        &--line {
+
+            .product__list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__description {
+
+        &_inner {
+            @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+
+            color: $black_0;
+            padding: 6.51% 6.51% 6.51% 0;
+
+            h2 {
+                @include adaptiv-font(16, 24, 14, 18, "Montserrat-Bold");
+
+                margin-bottom: 24px;
+                color: $black_0;
+            }
+
+            h3 {
+                @include adaptiv-font(14, 20, 12, 16, "Montserrat-Bold");
+
+                margin-bottom: 18px;
+                color: $black_0;
+            }
+
+            h4 {
+                @include adaptiv-font(12, 18, 10, 14, "Montserrat-Bold");
+
+                margin-bottom: 14px;
+                color: $black_0;
+            }
+        }
+
+        &_title {
+            @include adaptiv-font(14, 24, 10, 18, "Montserrat-Bold");
+            // @include font(14px, 24px, "Montserrat-Bold");
+
+            margin-bottom: 24px;
+            color: $black_0;
+        }
+
+        &_paragraph {
+            @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+            // @include font(14px, 24px, "Montserrat-Regular");
+
+            color: $black_0;
+        }
+    }
+}
+
+@include respond-to(desktop) {
+
+    .catalog {
+
+        .product {
+
+            &__list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .tile {
+            max-width: unset;
+        }
+        
+        &__description {
+
+            &_inner {
+                padding: 6.51% 6.51% 6.51% 15px;
+            }
+        }
+    }
+}
+
+@include respond-to(mobile_plus) {
+
+    .catalog {
+
+        .product {
+
+            &__list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@include respond-to(mobile) {
+
+    .catalog {
+
+        &__body {
+            flex-direction: column;
+        }
+
+        &__title {
+            padding: 25px 20px;
+        }
+
+        &__nav {
+
+            &_list {
+                grid-template-columns: 1fr;
+            }
+
+            &_item {
+                padding: 10px 20px;
+            }
+
+            &_link {
+                display: flex;
+                align-items: center;
+            }
+
+            &_photo {
+                width: 90px;
+                padding-bottom: 90px;
+                margin: 0 30px 0 0;
+            }
+        }
+    }
+}

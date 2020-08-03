@@ -1,0 +1,60 @@
+// <div class="counter">
+//     <div class="counter__inner">
+//         <button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+//             <i class="counter__btn_icon">
+//                 <svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+//                     <rect width="10" height="2"></rect>
+//                 </svg>
+//             </i>
+//         </button>
+//         <input type="number" min="1" value="1" class="counter__input">
+//         <button type="button" class="counter__btn counter__btn--add counter_add">
+//             <i class="counter__btn_icon">
+//                 <svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+//                     <path d="M0 4H10V6H0V4Z"></path>
+//                     <path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+//                 </svg>
+//             </i>
+//         </button>
+//     </div>
+// </div>
+
+.counter {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__input {
+        width: 30px;
+        padding: 0;
+        border: 0;
+        margin: 0 5px;
+        text-align: center;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        &_icon {
+            flex-shrink: 0;
+            display: inline-block;
+            width: 10px;
+        }
+
+        &_svg {
+            fill: $black_0;
+            stroke: $black_0;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.new {
+    display: none;
+    border-bottom: 1px solid $gray_1;
+
+    .tile {
+
+        &__inner {
+            padding: 30px 15px;
+        }
+
+        // &__cost {
+        //     margin-bottom: 0;
+        // }
+
+        // &__cart_link {
+        //     display: none;
+        // }
+
+        // &__unavailable_link {
+        //     display: none;
+        // }
+
+        // &__discontinued_link {
+        //     display: none;
+        // }
+    }
+
+    &__title {
+        @include font(22px, 40px, "Montserrat-Bold");
+
+        padding: 3.1% 5.8%;
+        border-bottom: 1px solid $gray_1;
+        color: $blue_0;
+    }
+
+    &__list {
+
+        .slick-prev {
+            left: 0;
+            width: 30px;
+            height: 60px;
+            overflow: hidden;
+            z-index: 1;
+
+            &::before {
+                @include font(20px, 60px, "Montserrat-Medium");
+
+                content: '<';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 75%;
+                color: $gray_9;
+                z-index: 1;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 200%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                background-color: $gray_1;
+                border-radius: 50%;
+            }
+        }
+
+        .slick-next {
+            right: 0;
+            width: 30px;
+            height: 60px;
+            overflow: hidden;
+            z-index: 1;
+
+            &::before {
+                @include font(20px, 60px, "Montserrat-Medium");
+
+                content: '>';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 75%;
+                color: $gray_9;
+                z-index: 1;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 200%;
+                height: 100%;
+                transform: translate(50%, -50%);
+                background-color: $gray_1;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__item {
+        border-right: 1px solid $gray_1;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}

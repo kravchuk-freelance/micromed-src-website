@@ -1,0 +1,269 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    pointer-events: none;
+    transition: background-color 0.2s linear;
+
+    &--open {
+        background-color: $black_1;
+        overflow-x: hidden;
+        z-index: 10;
+        pointer-events: all;
+
+        .menu__inner {
+            transform: translateX(0);
+        }
+    }
+
+    &__btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100px;
+        fill: $white_0;
+        background-color: $blue_1;
+        cursor: pointer;
+
+        &_svg {
+            width: 14px;
+            height: 14px;
+            will-change: opacity;
+            transition: opacity 0.2s linear;
+
+            &--close {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    &__inner {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+        width: 100%;
+        max-width: 650px;
+        transform: translateX(-100%);
+        background-color: $blue_0;
+        will-change: transform;
+        transition: transform 0.2s linear;
+    }
+
+    &__head {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-bottom: 50px;
+    }
+
+    &__callback {
+        display: none;
+        flex-grow: 1;
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue_9;
+        
+        &_title {
+            @include font(10px, 12px, "Montserrat-Bold");
+
+            color: $blue_8;
+        }
+    }
+
+    &__language {
+        display: none;
+        width: 60px;
+        background-color: $blue_10;
+
+        &_inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        &_title {
+            @include font(10px, 12px, "Montserrat-Bold");
+
+            color: $blue_8;
+            text-transform: uppercase;
+        }
+    }
+
+    &__body {
+        padding: 0 50px 0 100px;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        @include adaptiv-font(22, 27, 16, 20, "Montserrat-Bold");
+        // @include font(22px, 27px, "Montserrat-Bold");
+
+        display: inline-block;
+        color: $white_0;
+        fill: $white_0;
+
+        &_icon {
+            display: inline-block;
+            width: 14px;
+            margin-left: 7px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 100px 45px;
+    }
+
+    &__contacts {
+
+        &_link {
+            @include adaptiv-font(16, 34, 10, 18, "Montserrat-Medium");
+            // @include font(16px, 34px, "Montserrat-Medium");
+
+            color: $blue_2;
+        }
+    }
+
+    &__weekdays {
+
+        &_item {
+            @include adaptiv-font(16, 34, 10, 18, "Montserrat-Medium");
+            // @include font(16px, 34px, "Montserrat-Medium");
+
+            color: $blue_2;
+        }
+    }
+}
+
+// 0 - 1280
+@include respond-to(desktop) {
+
+    .menu {
+
+        &__inner {
+            max-width: 550px;
+        }
+
+        &__btn {
+            width: 80px;
+        }
+
+        &__head {
+            min-height: 80px;
+            margin-bottom: 30px;
+        }
+
+        &__body {
+            padding: 0 50px 0 80px;
+            margin-bottom: 30px;
+        }
+
+        &__footer {
+            padding: 0 80px 30px;
+        }
+    }
+}
+
+// 0 - 767
+@include respond-to(mobile) {
+
+    .menu {
+
+        &__inner {
+            max-width: none;
+        }
+
+        &__head {
+            min-height: 60px;
+        }
+
+        &__btn {
+            width: 60px;
+
+            &_svg {
+                width: 10px;
+                height: 10px;
+
+                &--close {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        &__callback {
+            display: flex;
+        }
+
+        &__language {
+            display: block;
+        }
+
+        &__body {
+            padding: 0 60px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__footer {
+            padding: 0 60px 30px;
+        }
+    }
+}
+
+// 0 - 480
+@include respond-to(mobile_small) {
+
+    .menu {
+
+        &__head {
+            min-height: 56px;
+            margin-bottom: 20px;
+        }
+
+        &__btn {
+            width: 56px;
+        }
+
+        &__body {
+            padding: 0 35px;
+            margin-bottom: 20px;
+        }
+
+        &__footer {
+            padding: 0 40px 20px;
+        }
+    }
+}

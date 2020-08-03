@@ -1,0 +1,111 @@
+.separate_news {
+
+    &__head {
+        padding: 1.41% 2.24%;
+        border-bottom: 1px solid $gray_1;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-areas:
+            "photo title"
+            "photo description";
+        grid-column-gap: 5.79%;
+        padding: 2.08% 2.24% 3.33%;
+    }
+
+    &__title {
+        @include font(40px, 46px, "Montserrat-Regular");
+
+        grid-area: title;
+        margin-bottom: 4.96%;
+        color: $black_0;
+    }
+
+    &__photo {
+        grid-area: photo;
+        max-width: 375px;
+    }
+
+    &__description {
+        grid-area: description;
+    }
+
+    &__article {
+        padding-bottom: 5.4%;
+        border-bottom: 1px solid $gray_1;
+        margin-bottom: 5.4%;
+
+        p {
+            @include font(14px, 24px, "Montserrat-Regular");
+
+            margin-bottom: 24px;
+            color: $black_0;
+
+            &:first-child {
+                color: $blue_0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__paragraph {
+        @include font(14px, 24px, "Montserrat-Regular");
+
+        margin-bottom: 24px;
+        color: $black_0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--color {
+            color: $blue_0;
+        }
+    }
+
+    &__features {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+
+            &:first-child {
+                @include font(14px, 24px, "Montserrat-Bold");
+
+                width: 13.62%;
+                color: $black_0;
+            }
+        }
+
+        &_title {
+            @include font(14px, 24px, "Montserrat-Bold");
+
+            width: 13.62%;
+            color: $black_0;
+        }
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            width: 76.68%;
+
+            li {
+                @include font(14px, 24px, "Montserrat-Regular");
+
+                width: 30%;
+                color: $black_0;
+            }
+        }
+
+        &_item {
+            @include font(14px, 24px, "Montserrat-Regular");
+
+            width: 30%;
+            color: $black_0;
+        }
+    }
+}

@@ -1,0 +1,150 @@
+// <div class="filter__dropdown filter__dropdown--open">
+//     <ul class="filter__dropdown_list">
+//         <li class="filter__dropdown_item">
+//             <p class="filter__dropdown_title">
+
+//             </p>
+//             <div class="filter__dropdown_description">
+//                 <ul class="filter__dropdown_description_list">
+//                     <li class="filter__dropdown_description_item">
+//                         <input class="filter__dropdown_description_input" type="checkbox" name="" id="">
+//                         <label class="filter__dropdown_description_label" for="">
+
+//                             <p class="filter__dropdown_description_count">
+
+//                             </p>
+//                         </label>
+//                     </li>
+//                 </ul>
+//             </div>
+//         </li>
+//     </ul>
+// </div>
+
+.filter {
+
+    &__list {
+        display: grid;
+        grid-row-gap: 20px;
+    }
+
+    &__dropdown {
+
+        &--open {
+    
+            .filter__dropdown_title {
+    
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .color__list {
+            grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+            grid-gap: 16px;
+        }
+
+        &_title {
+            @include font(14px, 17px, "Montserrat-Bold");
+
+            padding: 10px 0;
+            color: $black_0;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border: 4px solid transparent;
+                border-bottom: 0;
+                border-top-color: $black_0;
+                margin-left: 4px;
+                transform: translateY(-50%);
+                transform-origin: 50% 0;
+            }
+        }
+
+        &_description {
+            margin-top: 20px;
+
+            &_item {
+                display: flex;
+                margin-bottom: 15px;
+            }
+
+            &_input {
+                display: none;
+
+                &:checked {
+
+                    & + .filter__dropdown_description_label {
+                        // font-family: "Montserrat-Medium";
+                        color: $blue_0;
+
+                        &::before {
+                            border-color: $blue_0;
+                        }
+
+                        &::after {
+                            display: block;
+                        }
+
+                        .filter__dropdown_description_count {
+                            // font-family: "Montserrat-Medium";
+                            color: $blue_0;
+                        }
+                    }
+
+                }
+            }
+
+            &_label {
+                @include font(14px, 17px, "Montserrat-Regular");
+
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                color: $gray_0;
+                transition: color 0.2s;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid $gray_7;
+                    border-radius: 50%;
+                }
+
+                &::after {
+                    display: none;
+                    content: '';
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 5px;
+                    height: 5px;
+                    background-color: $blue_0;
+                    border-radius: 50%;
+                }
+
+                &:hover {
+                    color: $blue_0;
+                }
+            }
+
+            &_count {
+                margin-left: 5px;
+                color: $gray_4;
+            }
+        }
+    }
+}

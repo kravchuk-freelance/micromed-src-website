@@ -1,0 +1,47 @@
+.request {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 27px 43px;
+        border-bottom: 1px solid $gray_1;
+    }
+
+    &__top {
+        display: flex;
+        padding: 39px 27px 39px 43px;
+        background-color: $gray_12;
+    }
+
+    &__title {
+        @include font(22px, 27px, "Montserrat-Bold");
+
+        margin-right: 25px;
+        color: $black_0;
+    }
+
+    &__search {
+        @include font(22px, 27px, "Montserrat-Regular");
+
+        color: $black_0;
+    }
+
+    &__main {
+
+        .pagination {
+            justify-content: center;
+        }
+    }
+
+    .product {
+        border-bottom: 1px solid $gray_1;
+
+        &__item {
+            
+            &:nth-child(5n) {
+                border-right: 0;
+            }
+        }
+    }
+}

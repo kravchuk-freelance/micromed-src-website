@@ -1,0 +1,109 @@
+.nav {
+    position: relative;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item {
+
+        &:hover {
+
+            .subnav {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__link {
+        @include adaptiv-font(14, 22, 12, 16, "Montserrat-Regular");
+        // @include font(14px, 22px, "Montserrat-Regular");
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 15px;
+        border-left: 1px solid $gray_1;
+        border-bottom: 1px solid $gray_1;
+        color: $gray_0;
+        background-color: $white_0;
+        will-change: color;
+        transition: color 0.2s;
+        z-index: 4;
+
+        &:hover {
+            color: $blue_0;
+        }
+
+        &_text {
+            width: 46.15%;
+            min-width: 120px;
+        }
+    }
+}
+
+.subnav {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: calc(100vw - 100px - 245px);
+    border-top: 1px solid $gray_1;
+    background-color: $white_0;
+    transform: translateY(-200%);
+    will-change: transform;
+    transition: transform 0.2s;
+    z-index: 3;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 3rem;
+        padding: 3.18%;
+    }
+
+    &__link {
+        @include adaptiv-font(14, 24, 12, 16, "Montserrat-Medium");
+        // @include font(14px, 24px, "Montserrat-Medium");
+
+        display: block;
+        color: $gray_0;
+        will-change: color;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $blue_0;
+        }
+
+        &_line {
+            display: block;
+        }
+    }
+}
+
+// 0 - 1280
+@include respond-to(desktop) {
+
+    .subnav {
+        width: calc(100vw - 80px - 200px);
+    }
+}
+
+// 0 - 1024
+@include respond-to(tablet) {
+
+    .nav {
+
+        &__link {
+
+            &_text {
+                min-width: 100px;
+            }
+        }
+    }
+}

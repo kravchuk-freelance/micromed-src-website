@@ -1,0 +1,1145 @@
+.product {
+    @include adaptiv-font(18, 22, 14, 18, "Montserrat-Medium");
+
+    &__head {
+        padding: 1.41% 2.24%;
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        border-top: 1px solid $gray_1;
+    }
+
+    &--unavailable {
+
+        .new {
+            display: block;
+        }
+
+        .product {
+
+            &__photo {
+
+                &_inner {
+                    opacity: 0.3;
+                }
+            }
+
+            &__preview {
+                filter: grayscale(1);
+
+                &_photo {
+                    opacity: 0.3;
+                }
+
+                &_unavailable {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    &--expected {
+
+        .product {
+
+            &__preview {
+
+                &_photo {
+                    opacity: 0.5;
+                }
+
+                &_expected {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+
+    &__preview {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 31.56%;
+        min-width: 350px;
+
+        &_head {
+            display: none;
+        }
+
+        &_body {
+            position: relative;
+            display: flex;
+            height: calc(100vh - 171px);
+        }
+
+        &_list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+            height: 100%;
+            width: 20.13%;
+        }
+
+        &_item {
+            width: 100%;
+            border-right: 1px solid $gray_1;
+            border-bottom: 1px solid $gray_1;
+            cursor: pointer;
+
+            &:hover {
+
+                .product__preview_img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &_photo {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+
+        &_img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.2s;
+        }
+
+        &_unavailable {
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &_title {
+                @include adaptiv-font(18, 22, 14, 18, "Montserrat-Bold");
+                // @include font(18px, 22px, "Montserrat-Bold");
+
+                width: 100%;
+                padding: 23px 0;
+                background-color: $gray_2;
+                color: $white_0;
+                text-align: center;
+            }
+        }
+
+        &_expected {
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &_title {
+                @include adaptiv-font(18, 22, 14, 18, "Montserrat-Bold");
+                // @include font(18px, 22px, "Montserrat-Bold");
+
+                width: 100%;
+                padding: 23px 0;
+                background-color: $blue_0;
+                color: $white_0;
+                text-align: center;
+            }
+        }
+    }
+
+    &__photo {
+        width: 79.87%;
+        height: 100%;
+        border-bottom: 1px solid $gray_1;
+
+        &_inner {
+            width: 100%;
+            height: 100%;
+        }
+
+        &_img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__tab {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        &_list {
+            display: flex;
+        }
+
+        &_item {
+            @include adaptiv-font(14, 24, 12, 14, "Montserrat-Bold");
+            // @include font(14px, 24px, "Montserrat-Bold");
+
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            width: 25%;
+            padding: 1.93%;
+            border-right: 1px solid $gray_1;
+            border-bottom: 1px solid $gray_1;
+            background-color: $white_0;
+            color: $gray_7;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            cursor: pointer;
+
+            &:last-child {
+                border-right: 0;
+            }
+
+            &.is-active {
+                font-family: "Montserrat-Bold";
+                color: $blue_0;
+                cursor: default;
+            }
+        }
+    }
+
+    &__description {
+        align-self: stretch;
+        flex-grow: 1;
+        width: 20%;
+        border-left: 1px solid $gray_1;
+        border-right: 1px solid $gray_1;
+
+        &_item {
+
+            &.is-active {
+
+                .product__description_pane {
+                    display: block;
+                }
+            }
+        }
+
+        &_tab {
+            display: none;
+        }
+
+        &_pane {
+            display: none;
+
+            &_head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 70.46%;
+                padding-top: 6.95%;
+                margin: 0 auto;
+            }
+
+            &_title {
+                @include adaptiv-font(32, 40, 20, 27, "Montserrat-Regular");
+                // @include font(32px, 40px, "Montserrat-Regular");
+
+                flex-basis: 466px;
+                width: 70.46%;
+                color: $black_0;
+            }
+
+            &_logo {
+                flex-shrink: 0;
+                width: 124px;
+                height: 25px;
+            }
+
+            &_img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            &_body {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 4.83% 0 0;
+
+                &_inner {
+                    width: 70.46%;
+                }
+            }
+
+            &_characteristic {
+
+                &_item {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 15px;
+                    padding: 10px 0;
+                    border-bottom: 1px solid $gray_1;
+                    margin-bottom: 10px;
+                }
+
+                &_title {
+                    @include adaptiv-font(14, 24, 10, 14, "Montserrat-Regular");
+                    // @include font(14px, 24px, "Montserrat-Regular");
+
+                    color: $gray_10;
+                }
+
+                &_description {
+                    @include adaptiv-font(14, 24, 10, 14, "Montserrat-Medium");
+                    // @include font(14px, 24px, "Montserrat-Medium");
+
+                    color: $black_0;
+                }
+            }
+
+            &_definition {
+                @include adaptiv-font(14, 24, 10, 14, "Montserrat-Regular");
+
+                color: $gray_7;
+
+                &_paragraph {
+                    @include adaptiv-font(14, 24, 10, 14, "Montserrat-Regular");
+                    // @include font(14px, 24px, "Montserrat-Regular");
+
+                    margin-bottom: 24px;
+                    color: $gray_7;
+
+                    span {
+                        @include adaptiv-font(14, 24, 10, 14, "Montserrat-Medium");
+                        // @include font(14px, 24px, "Montserrat-Medium");
+
+                        color: $gray_7;
+                    }
+
+                    a {
+                        @include adaptiv-font(14, 24, 10, 14, "Montserrat-Medium");
+                    }
+                }
+            }
+
+            &_options {
+
+                li {
+                    @include adaptiv-font(14, 24, 10, 14, "Montserrat-Medium");
+                    // @include font(14px, 24px, "Montserrat-Medium");
+
+                    counter-increment: options-count;
+                    color: $gray_7;
+
+                    &::before {
+                        content: counter(options-count) ".";
+                    }
+                }
+
+                // &_item {
+                //     @include font(14px, 24px, "Montserrat-Medium");
+
+                //     counter-increment: options-count;
+                //     color: $gray_7;
+
+                //     &::before {
+                //         content: counter(options-count) ".";
+                //     }
+                // }
+            }
+
+            &_respond {
+                width: 100%;
+
+                &_head {
+                    display: flex;
+                    justify-content: center;
+                    padding: 30px 0;
+                    border-top: 1px solid $gray_1;
+                    border-bottom: 1px solid $gray_1;
+                }
+
+                &_title {
+                    @include adaptiv-font(22, 40, 14, 18, "Montserrat-Regular");
+                    // @include font(22px, 40px, "Montserrat-Regular");
+
+                    width: 70.46%;
+                    color: $black_0;
+                }
+
+                &_body {
+                    display: flex;
+                    justify-content: center;
+                    padding: 5.02% 0;
+
+                    &_list {
+                        width: 70.46%;
+
+                        p {
+                            @include adaptiv-font(16, 18, 12, 14, "Montserrat-Medium");
+
+                            color: $red_1;
+                        }
+                    }
+
+                    &_item {
+                        margin-bottom: 6.44%;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &_date {
+                        @include adaptiv-font(14, 17, 10, 12, "Montserrat-Regular");
+                        // @include font(14px, 17px, "Montserrat-Regular");
+
+                        margin-bottom: 9px;
+                        color: $gray_9;
+                    }
+
+                    &_name {
+                        @include adaptiv-font(18, 22, 14, 16, "Montserrat-Bold");
+                        // @include font(18px, 22px, "Montserrat-Bold");
+
+                        margin-bottom: 8px;
+                        color: $black_0;
+                    }
+
+                    &_rating {
+                        width: 86px;
+                        height: 14px;
+                        margin-bottom: 17px;
+                    }
+
+                    &_img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    &_description {
+                        @include adaptiv-font(14, 24, 10, 14, "Montserrat-Regular");
+                        // @include font(14px, 24px, "Montserrat-Regular");
+
+                        font-style: italic;
+                        color: $gray_7;
+                    }
+                }
+            }
+
+            &_footer {
+                display: flex;
+                justify-content: center;
+                padding: 6.27% 0;
+                background-color: $gray_12;
+            }
+
+            &_form {
+                display: flex;
+                flex-direction: column;
+                width: 70.46%;
+
+                &_title {
+                    @include adaptiv-font(22, 27, 14, 16, "Montserrat-Regular");
+                    // @include font(22px, 27px, "Montserrat-Regular");
+
+                    margin-bottom: 8.9%;
+                    color: $black_0;
+                }
+
+                .control-label {
+                    @include adaptiv-font(12, 14, 10, 12, "Montserrat-Medium");
+
+                    color: $red_1;
+                }
+
+                .alert {
+                    @include adaptiv-font(12, 14, 10, 12, "Montserrat-Medium");
+
+                    margin-bottom: 5px;
+
+                    &-danger {
+                        color: $red_1;
+                    }
+                }
+            }
+
+            &_input_wrap {
+                @include adaptiv-font(12, 14, 8, 10, "Montserrat-Regular");
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 4.66%;
+
+                input {
+                    margin: 0;
+                }
+            }
+
+            &_input {
+                @include adaptiv-font(14, 17, 10, 12, "Montserrat-Regular");
+                // @include font(14px, 17px, "Montserrat-Regular");
+
+                width: 47.26%;
+                padding-bottom: 18px;
+                color: $gray_7;
+                border: 0;
+                border-bottom: 1px solid $gray_8;
+                background-color: transparent;
+
+                &::placeholder {
+                    color: $gray_7;
+                }
+
+                &:focus {
+
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+
+            &_textarea {
+                @include adaptiv-font(14, 17, 10, 12, "Montserrat-Regular");
+                // @include font(14px, 17px, "Montserrat-Regular");
+
+                font-style: italic;
+                width: 100%;
+                min-height: 100px;
+                padding: 15px;
+                resize: none;
+                border: 1px solid $gray_8;
+                background-color: $white_0;
+
+                &::placeholder {
+                    color: $gray_7;
+                }
+
+                &:focus {
+
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+
+            &_submit {
+                @include adaptiv-font(14, 17, 10, 12, "Montserrat-Bold");
+                // @include font(14px, 17px, "Montserrat-Bold");
+
+                align-self: flex-end;
+                padding: 15px 30px;
+                border: 1px solid $gray_8;
+                border-top: 0;
+                color: $blue_0;
+                background-color: $white_0;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__buy {
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: calc(100vh - 171px);
+        width: 14.48%;
+        min-width: 278px;
+        background-color: $gray_12;
+
+        &_head {
+            padding: 25px 30px 0;
+            margin-bottom: 15px;
+
+            &_id {
+                @include adaptiv-font(12, 15, 10, 12, "Montserrat-Regular");
+                // @include font(12px, 15px, "Montserrat-Regular");
+
+                margin-bottom: 25px;
+                color: $gray_9;
+            }
+
+            &_title {
+                @include adaptiv-font(16, 23, 12, 16, "Montserrat-Bold");
+                // @include font(16px, 23px, "Montserrat-Bold");
+
+
+                color: $black_0;
+            }
+
+            &_available {
+                @include adaptiv-font(12, 24, 10, 14, "Montserrat-Regular");
+                // @include font(12px, 24px, "Montserrat-Regular");
+
+                color: $green_1;
+            }
+        }
+
+        &_body {
+            padding: 0 30px;
+            margin-bottom: 15px;
+
+            &_description {
+                margin-bottom: 10px;
+
+                &--toggled {
+                    overflow: hidden;
+                }
+
+                &_paragraph {
+                    // @include adaptiv-font(12, 20, 10, 16, "Montserrat-Regular");
+                    @include font(12px, 20px, "Montserrat-Regular");
+
+                    color: $gray_10;
+                }
+
+            }
+
+            &_more {
+                @include adaptiv-font(12, 20, 10, 16, "Montserrat-Regular");
+                // @include font(12px, 20px, "Montserrat-Regular");
+
+                display: inline-block;
+                color: $gray_2;
+                cursor: pointer;
+
+                &_icon {
+                    display: inline-block;
+                    width: 6px;
+                }
+
+                &_svg {
+                    fill: transparent;
+                    stroke: $gray_2;
+                }
+            }
+        }
+
+        &_footer {
+
+            .color {
+                padding: 0 30px;
+                margin-bottom: 48px;
+
+                &__head {
+                    display: none;
+                }
+            }
+
+            &_price {
+                padding: 0 30px;
+                margin-bottom: 48px;
+
+                &_current {
+                    @include adaptiv-font(16, 20, 12, 16, "Montserrat-Regular");
+                    // @include font(16px, 20px, "Montserrat-Regular");
+
+                    color: $gray_5;
+                    text-decoration: line-through;
+                }
+
+                &_sale {
+                    @include adaptiv-font(32, 39, 14, 18, "Montserrat-Bold");
+                    // @include font(32px, 39px, "Montserrat-Bold");
+
+                    color: $black_0;
+                }
+            }
+
+            &_commerce {
+                @include adaptiv-font(14, 17, 10, 14, "Montserrat-Bold");
+                // @include font(14px, 17px, "Montserrat-Bold");
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 30px;
+                margin-bottom: 48px;
+                color: $blue_0;
+
+                &_icon {
+                    display: inline-block;
+                    width: 12px;
+                    margin-right: 5px;
+                    fill: $blue_0;
+                }
+            }
+
+            .counter {
+                display: flex;
+                height: 76px;
+                border-top: 1px solid $gray_1;
+                border-bottom: 1px solid $gray_1;
+
+                &__btn {
+                    width: 33.33%;
+                    padding: 0;
+                    border: 0;
+                    background-color: $white_0;
+                    cursor: pointer;
+
+                    &_icon {
+                        display: inline-block;
+                        width: 15px;
+                    }
+
+                    &_svg {
+                        fill: $gray_9;
+                        stroke: $gray_9;
+                    }
+                }
+
+                &__input {
+                    @include adaptiv-font(16, 20, 12, 16, "Montserrat-Medium");
+                    // @include font(16px, 20px, "Montserrat-Medium");
+
+                    width: 33.33%;
+                    border: 0;
+                    border-left: 1px solid $gray_1;
+                    border-right: 1px solid $gray_1;
+                    margin: 0;
+                    background-color: $white_0;
+                    color: $black_0;
+                    text-align: center;
+                }
+            }
+
+            &_form {
+
+                button {
+                    @include adaptiv-font(18, 22, 12, 16, "Montserrat-Bold");
+                    // @include font(18px, 22px, "Montserrat-Bold");
+
+                    width: 100%;
+                    padding: 26px 15px;
+                    border: 0;
+                    background-color: $blue_0;
+                    color: $white_0;
+                    text-align: center;
+                }
+            }
+
+            &_link {
+                @include adaptiv-font(18, 22, 12, 16, "Montserrat-Bold");
+                // @include font(18px, 22px, "Montserrat-Bold");
+
+                display: block;
+                width: 100%;
+                padding: 26px 15px;
+                border: 0;
+                color: $white_0;
+                background-color: $blue_0;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// 0 - 1280
+@include respond-to(desktop) {
+
+    .product {
+
+        .tile {
+
+            &__footer {
+                
+                button {
+                    padding: 10px 15px;
+                }
+            }
+        }
+
+        &__description {
+
+            &_pane {
+
+                &_head {
+                    width: 100%;
+                    padding: 6.95% 20px 0;
+                }
+
+                &_characteristic {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+
+                &_definition {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+
+                &_options {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+
+                &_respond {
+
+                    &_head {
+                        width: 100%;
+                        padding: 30px 20px;
+                    }
+
+                    &_title {
+                        width: 100%;
+                    }
+
+                    &_body {
+                        width: 100%;
+                        padding: 5.02% 20px;
+
+                        &_list {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &_form {
+                    width: 100%;
+                    padding: 0 20px;
+
+                    &_title {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &_input {
+                    padding: 5px;
+                }
+            }
+        }
+
+        &__buy {
+            min-height: auto;
+            min-width: 238px;
+
+            &_head {
+                padding: 15px 15px 0;
+            }
+
+            &_body {
+                padding: 0 15px;
+            }
+
+            &_footer {
+
+                .color {
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+
+                    &__list {
+                        grid-gap: 15px;
+                    }
+                }
+
+                &_price {
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                &_commerce {
+                    padding: 0 15px;
+                    margin-bottom: 20px;
+                }
+
+                .counter {
+                    height: 56px;
+
+                    &__btn {
+                        width: 56px;
+
+                        &_icon {
+                            width: 12px;
+                        }
+                    }
+
+                    &__input {
+                        flex-grow: 1;
+                    }
+                }
+
+                &_link {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+// 0 - 1024
+@include respond-to(tablet) {
+
+    .product {
+
+        &__preview {
+            min-width: auto;
+
+            &_body {
+                height: auto;
+            }
+        }
+
+        &__photo {
+            height: auto;
+        }
+
+        &__description {
+
+            &_pane {
+
+                &_title {
+                    @include adaptiv-font(26, 30, 16, 22, "Montserrat-Regular");
+                }
+            }
+        }
+
+        &__buy {
+            min-width: 190px;
+
+            &_footer {
+
+                &_commerce {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// 0 - 768
+@include respond-to(mobile) {
+
+    .product {
+
+        &--unavailable {
+
+            .product {
+
+                &__preview {
+
+                    &_list {
+
+                        button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__description {
+
+            .similar {
+
+                &__title {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        &__body {
+            flex-direction: column;
+        }
+
+        &__preview {
+            order: 1;
+            position: relative;
+            width: 100%;
+
+            &_head {
+                display: block;
+                padding: 20px;
+
+                &_info {
+                    display: flex;
+                }
+
+                &_id {
+                    @include font(10px, 12px, "Montserrat-Regular");
+
+                    margin-right: 20px;
+                    color: $gray_13;
+                }
+
+                &_unavailable {
+                    @include font(10px, 12px, "Montserrat-Regular");
+
+                    color: $green_1;
+                }
+
+                &_logo {
+                    width: 125px;
+                    height: 25px;
+                }
+
+                &_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &_description {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 22px;
+                }
+
+                &_title {
+                    @include font(20px, 26px, "Montserrat-Regular");
+
+                    color: $black_0;
+                }
+            }
+
+            &_body {
+                overflow-x: hidden;
+            }
+
+            &_list {
+                display: block;
+                width: 100%;
+            }
+
+            &_item {
+                border: 0;
+
+                &:hover {
+
+                    .product__preview_img {
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            &_photo {
+                position: relative;
+                height: 0;
+                padding-bottom: 85%;
+            }
+
+            &_img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__photo {
+            width: 0;
+
+            &_inner {
+                display: none;
+            }
+        }
+
+        &__description {
+            order: 3;
+            width: 100%;
+
+            &_tab {
+                @include font(14px, 24px, "Montserrat-Bold");
+
+                display: block;
+                padding: 12px 20px;
+                border-top: 1px solid $gray_1;
+                background-color: $gray_12;
+                color: $black_0;
+            }
+
+            &_pane {
+
+                &_body {
+                    padding: 15px 0 0 0;
+                }
+
+                &_characteristic {
+
+                    &_item {
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                &_options {
+                    padding: 0 20px 20px;
+                }
+            }
+        }
+
+        &__tab {
+            display: none;
+        }
+
+        &__buy {
+            order: 2;
+            position: relative;
+            width: 100%;
+
+            &_head {
+                display: none;
+            }
+
+            &_body {
+                display: none;
+            }
+
+            &_footer {
+
+                .color {
+                    padding: 15px;
+                    margin-bottom: 0;
+
+                    &__list {
+                        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+                        grid-gap: 5px;
+                    }
+                }
+
+                &_price {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+                    height: 50px;
+                    background-color: $white_0;
+                    margin-bottom: 0;
+                }
+
+                &_link {
+                    position: fixed;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+                    height: 50px;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,366 @@
+.footer {
+
+    &__subscribe {
+
+        &_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2.08% 5.21%;
+            border-top: 1px solid $gray_8;
+            border-bottom: 1px solid $gray_8;
+        }
+
+        &_title {
+            @include adaptiv-font(22, 24, 18, 24, "Montserrat-Bold");
+            // @include font(22px, 24px, "Montserrat-Bold");
+
+            flex-grow: 1;
+            max-width: 400px;
+            margin-right: 20px;
+            color: $black_0;
+        }
+
+        &_form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 650px;
+            max-width: 1080px;
+        }
+
+        &_input {
+            width: 37.04%;
+            min-width: 220px;
+            padding: 19px 26px;
+            border: 1px solid $gray_8;
+            border-radius: 100px;
+
+            &:focus {
+
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+
+        &_button {
+            @include adaptiv-font(14, 17, 10, 12, "Montserrat-Bold");
+            // @include font(14px, 17px, "Montserrat-Bold");
+
+            width: 155px;
+            height: 55px;
+            padding: 0 15px;
+            background-color: $blue_0;
+            border: 1px solid $blue_0;
+            border-radius: 100px;
+            color: $white_0;
+            cursor: pointer;
+        }
+    }
+    
+    &__contacts {
+
+        &_inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 2.08% 5.21%;
+        }
+
+        &_logo {
+            margin-right: 20px;
+
+            .footer__contacts_link {
+                @include font(22px, 24px, "Montserrat-Black");
+            }
+        }
+
+        &_link {
+            @include adaptiv-font(22, 24, 10, 12, "Montserrat-Black");
+            // @include font(22px, 24px, "Montserrat-Black");
+
+            color: $blue_0;
+        }
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            max-width: 1490px;
+        }
+
+        &_item {
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &--sales_department {
+
+                .footer__contacts_item_description {
+                    grid-template-columns: repeat(3, auto);
+                    grid-template-rows: auto auto;
+                    grid-auto-flow: column;
+                }
+            }
+
+            &--schedule {
+
+                .footer__contacts_item_description {
+                    grid-template-columns: auto;
+                    grid-template-rows: auto;
+                }
+            }
+
+            &_title {
+                @include adaptiv-font(12, 23, 10, 18, "Montserrat-Bold");
+                // @include font(12px, 23px, "Montserrat-Bold");
+
+                margin-bottom: 23px;
+                color: $gray_10;
+            }
+
+            &_description {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-column-gap: 20px;
+                justify-content: flex-start;
+
+                &_block {
+                    @include adaptiv-font(12, 23, 10, 18, "Montserrat-Regular");
+                    // @include font(12px, 23px, "Montserrat-Regular");
+
+                    color: $gray_2;
+                }
+
+                &_link {
+                    transition: color 0.2s;
+
+                    &:hover {
+                        color: $blue_0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        background-color: $gray_3;
+
+        &_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1.04% 5.21%;
+        }
+
+        &_note {
+            @include adaptiv-font(12, 16, 10, 18, "Montserrat-Regular");
+            // @include font(12px, 16px, "Montserrat-Regular");
+
+            color: $gray_2;
+        }
+
+        &_link {
+            display: flex;
+            align-items: baseline;
+
+            &:hover {
+
+                .footer__copyright_icon {
+                    fill: #AC54E2;
+                }
+            }
+
+            &_span {
+                @include adaptiv-font(12, 16, 10, 18, "Montserrat-Regular");
+                // @include font(12px, 16px, "Montserrat-Regular");
+
+                position: relative;
+                transform: translateY(-5px);
+                margin-right: 10px;
+                color: $gray_2;
+            }
+        }
+
+        &_icon {
+            width: 60px;
+            fill: $gray_4;
+            transition: fill 0.3s;
+        }
+    }
+}
+
+// 0 - 1440
+@include respond-to(desktop-extra) {
+
+    .footer {
+
+        &__contacts {
+
+            &_inner {
+                flex-direction: column;
+            }
+
+            &_logo {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// 0 - 1280
+@include respond-to(desktop) {
+
+    .footer {
+
+        &__subscribe {
+
+            &_inner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            &_title {
+                max-width: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            &_form {
+                max-width: none;
+            }
+        }
+
+        &__contacts {
+
+            &_list {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                justify-content: flex-start;
+                grid-gap: 20px;
+            }
+        }
+    }
+}
+
+// 0 - 1024
+@include respond-to(tablet) {
+
+    .footer {
+
+        &__contacts {
+
+            &_list {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
+
+// 0 - 767
+@include respond-to(mobile) {
+
+    .footer {
+
+        &__subscribe {
+
+            &_inner {
+                padding: 36px 20px;
+            }
+
+            &_form {
+                flex-direction: column;
+                align-items: stretch;
+                min-width: unset;
+            }
+
+            &_input {
+                width: auto;
+                margin-bottom: 17px;
+            }
+        }
+
+        &__contacts {
+
+            &_inner {
+                padding: 36px 20px;
+            }
+
+            &_item {
+
+                &_title {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        &__copyright {
+
+            &_inner {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+// 0 - 480
+@include respond-to(mobile_small) {
+
+    .footer {
+
+        &__subscribe {
+
+            &_input {
+                padding: 12px 24px;
+            }
+
+            &_button {
+                width: 120px;
+                height: 40px;
+            }
+        }
+
+        &__contacts {
+
+            &_inner {
+                padding: 36px 20px;
+            }
+
+            &_item {
+
+                &_description {
+                    grid-template-columns: auto;
+                    grid-column-gap: unset;
+                }
+
+                &--sales_department {
+
+                    .footer__contacts_item_description  {
+                        grid-template-columns: auto;
+                        grid-auto-flow: row;
+                        grid-column-gap: unset;
+                    }
+                }
+            }
+        }
+
+        &__copyright {
+
+            &_link {
+
+                &_span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

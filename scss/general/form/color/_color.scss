@@ -1,0 +1,207 @@
+// <div class="color color--dropdown">      add / remove "color--dropdown" class to show / hide header
+//     <div class="color__inner">
+//         <div class="color__head">
+//             <p class="color__title">
+//                 Title
+//             </p>
+//         </div>
+//         <ul class="color__list">
+//             <li class="color__item">
+//                 <input id="white" class="color__radio" type="radio" name="color" data-color="white" checked>
+//                 <label for="white" class="color__label color__label--white"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="red" class="color__radio" type="radio" name="color" data-color="red">
+//                 <label for="red" class="color__label color__label--red"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="purple" class="color__radio" type="radio" name="color" data-color="purple">
+//                 <label for="purple" class="color__label color__label--purple"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="blue" class="color__radio" type="radio" name="color" data-color="blue">
+//                 <label for="blue" class="color__label color__label--blue"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="green" class="color__radio" type="radio" name="color" data-color="green">
+//                 <label for="green" class="color__label color__label--green"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="yellow" class="color__radio" type="radio" name="color" data-color="yellow">
+//                 <label for="yellow" class="color__label color__label--yellow"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="gray" class="color__radio" type="radio" name="color" data-color="gray">
+//                 <label for="gray" class="color__label color__label--gray"></label>
+//             </li>
+//             <li class="color__item">
+//                 <input id="black" class="color__radio" type="radio" name="color" data-color="black">
+//                 <label for="black" class="color__label color__label--black"></label>
+//             </li>
+//         </ul>
+//     </div>
+// </div>
+
+
+.color {
+
+    &__head {
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &__title {
+        @include font(14px, 17px, "Montserrat-Bold");
+
+        padding: 10px 0;
+        color: $black_0;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 4px solid transparent;
+            border-top-color: $black_0;
+            border-bottom: 0;
+            margin-left: 6px;
+            transform: translateY(-100%);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, min-content);
+        grid-gap: 24px;
+        justify-content: space-between;
+    }
+
+    &__radio {
+        display: none;
+
+        &:checked {
+
+            & + .color__label {
+                background-color: transparent;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                }
+                
+                &--white {
+                    
+                    &::before {
+                        background-color: $white_0;
+                    }
+                }
+
+                &--red {
+                    
+                    &::before {
+                        background-color: $red_1;
+                    }
+                }
+
+                &--purple {
+                    
+                    &::before {
+                        background-color: $purple_0;
+                    }
+                }
+
+                &--blue {
+                    
+                    &::before {
+                        background-color: $blue_7;
+                    }
+                }
+
+                &--green {
+                    
+                    &::before {
+                        background-color: $green_2;
+                    }
+                }
+
+                &--yellow {
+                    
+                    &::before {
+                        background-color: $yellow_0;
+                    }
+                }
+
+                &--gray {
+                    
+                    &::before {
+                        background-color: $gray_5;
+                    }
+                }
+
+                &--black {
+                    
+                    &::before {
+                        background-color: $black_0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__label {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+
+        &--white {
+            border-color: $gray_13;
+            background-color: $white_0;
+        }
+
+        &--red {
+            border-color: $red_1;
+            background-color: $red_1;
+        }
+
+        &--purple {
+            border-color: $purple_0;
+            background-color: $purple_0;
+        }
+
+        &--blue {
+            border-color: $blue_7;
+            background-color: $blue_7;
+        }
+
+        &--green {
+            border-color: $green_2;
+            background-color: $green_2;
+        }
+
+        &--yellow {
+            border-color: $yellow_0;
+            background-color: $yellow_0;
+        }
+
+        &--gray {
+            border-color: $gray_5;
+            background-color: $gray_5;
+        }
+
+        &--black {
+            border-color: $black_0;
+            background-color: $black_0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.pagination {
+    text-align: center;
+
+    &__list {
+        display: inline-flex;
+    }
+
+    &__item {
+        border-right: 1px solid $gray_1;
+
+        &:first-child {
+            border-left: 1px solid $gray_1;
+        }
+    }
+
+    &__link {
+        @include adaptiv-font(16, 20, 10, 12, "Montserrat-Bold");
+        // @include font(16px, 20px, "Montserrat-Bold");
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        color: $gray_8;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $blue_0;
+
+            .pagination__link_svg {
+                stroke: $blue_0;
+            }
+        }
+
+        &--active {
+            color: $blue_0;
+        }
+        
+        &_icon {
+            display: block;
+            width: 8px;
+        }
+
+        &_svg {
+            fill: transparent;
+            stroke: $gray_8;
+            transition: stroke 0.2s;
+        }
+    }
+}
+
+@include respond-to(desktop) {
+
+    .pagination {
+
+        &__link {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@include respond-to(tablet) {
+
+    .pagination {
+
+        &__link {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

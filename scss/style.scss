@@ -1,0 +1,72 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "extends.scss";
+@import "reset.scss";
+
+// GENERAL
+// COUNTER
+@import "general/counter/counter";
+// TILE
+@import "general/tile/tile";
+// FILTER dropdown
+@import "general/form/filter/dropdown";
+// SIMILAR
+@import "general/similar_product/similar";
+// NEW
+@import "general/new_model/new";
+// BREADCRUMBS
+@import "general/breadcrumbs/breadcrumbs";
+// PAGINATION
+@import "general/pagination/pagination";
+// PRODUCT GRID
+@import "general/product_grid/product_grid";
+// COLOR
+@import "general/form/color/color";
+// CALLBACK popup
+@import "general/callback_popup/callback";
+// THANKS popup
+@import "general/thanks_popup/thanks";
+// SETTINGS
+@import "general/settings/settings";
+// MENU
+@import "general/menu/menu";
+// SEARCH
+@import "general/search/search";
+// SIDEBAR
+@import "general/sidebar/sidebar";
+// CART
+@import "general/cart/cart";
+// NAV
+@import "general/nav/nav";
+// HEADER
+@import "general/header/header";
+// FOOTER
+@import "general/footer/footer";
+
+
+// Home
+@import "home/home";
+// Product
+@import "product/product";
+// Catalog
+@import "catalog/catalog";
+// Request
+@import "request/request";
+// Contacts
+@import "contacts/contacts";
+// Service
+@import "service/service";
+// About
+@import "about/about";
+// Payment
+@import "payment/payment";
+// News
+@import "news/news";
+// Separate news
+@import "separate_news/separate_news";
+// Error
+@import "error/error";
+
+// Checkout
+@import "checkout/checkout";

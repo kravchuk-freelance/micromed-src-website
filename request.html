@@ -1,0 +1,2565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Micromed</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	<meta name="author" content="Mango Web Studio">
+	<!-- Slick slider -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+  
+<body>
+	<!-- Callback popup -->
+	<div class="popup_callback" id="popup_callback">
+		<div class="popup_callback__inner">
+			<!-- Close button -->
+			<div class="popup_callback__close callback__btn">
+				<i class="popup_callback__close_icon">
+					<svg class="popup_callback__close_svg" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.71743 3.78249L16.6169 13.682L13.0814 17.2175L3.1819 7.31802L6.71743 3.78249Z" />
+						<path d="M16.6169 7.31802L6.71743 17.2175L3.1819 13.682L13.0814 3.78249L16.6169 7.31802Z" />
+					</svg>
+				</i>
+			</div>
+			<!-- Form -->
+			<form action="#" method="post" class="popup_callback__form" name="callback" id="callback" autocomplete="off">
+				<p class="popup_callback__title">
+					Замов зворотній дзвінок
+				</p>
+				<input type="text" name="name" id="name" class="popup_callback__input popup_callback__input--name" placeholder="Ім'я">
+				<input type="tel" name="tel" id="tel" class="popup_callback__input popup_callback__input--tel" placeholder="Телефон*" required pattern="^\+?3?8?(0\d{9})$">
+				<input type="text" name="message" id="message" class="popup_callback__input popup_callback__input--message" placeholder="Повідомлення">
+				<button type="submit" class="popup_callback__submit">
+					Замовити
+				</button>
+			</form>
+		</div>
+	</div>
+	<!-- Thanks popup -->
+	<div class="popup_thanks" id="popup_thanks">
+		<div class="popup_thanks__inner">
+			<p class="popup_thanks__title">
+				Дякуємо за заявку!
+			</p>
+			<p class="popup_thanks__description">
+				Наш менеджер зателефонує Вам найближчим часом!
+			</p>
+		</div>
+	</div>
+	<!-- SEARCH -->
+	<div class="search" id="search">
+		<div class="search__inner">
+			<!-- Close buttton -->
+			<div class="search__btn search__btn--close">
+				<i class="search__btn_icon">
+					<svg class="search__btn_svg" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.71743 3.78249L16.6169 13.682L13.0814 17.2175L3.1819 7.31802L6.71743 3.78249Z" />
+						<path d="M16.6169 7.31802L6.71743 17.2175L3.1819 13.682L13.0814 3.78249L16.6169 7.31802Z" />
+					</svg>
+				</i>
+			</div>
+			<p class="search__title">
+				Пошук
+			</p>
+			<label class="search__label">
+				<input type="text" class="search__input" autocomplete="off" name="search" placeholder="Що бажаєте знайти?">
+				<i class="search__icon">
+					<svg class="search__svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M17.6125 15.4914C18.7935 13.8786 19.4999 11.8976 19.4999 9.75004C19.4999 4.37405 15.1259 0 9.74993 0C4.37398 0 0 4.37405 0 9.75004C0 15.126 4.37403 19.5001 9.74998 19.5001C11.8975 19.5001 13.8787 18.7936 15.4915 17.6125L21.8789 24L24 21.8789C24 21.8789 17.6125 15.4914 17.6125 15.4914ZM9.74998 16.5C6.02782 16.5 3.00001 13.4722 3.00001 9.75004C3.00001 6.02785 6.02782 3.00003 9.74998 3.00003C13.4721 3.00003 16.5 6.02785 16.5 9.75004C16.5 13.4722 13.4721 16.5 9.74998 16.5Z" />
+					</svg>
+				</i>
+			</label>
+			<!-- Search footer -->
+			<div class="search__footer">
+				<p class="search__title">
+					Найчастіше шукають
+				</p>
+				<div class="search__popular">
+					<ul class="search__popular_list">
+						<li class="search__popular_item">
+							#мікроскоп дитячій 
+						</li>
+						<li class="search__popular_item">
+							#стеріомікроскоп
+						</li>
+						<li class="search__popular_item">
+							#медичні рукавички
+						</li>
+						<li class="search__popular_item">
+							#термостат
+						</li>
+						<li class="search__popular_item">
+							#баня водна
+						</li>
+						<li class="search__popular_item">
+							#центрифуга
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CART -->
+	<div class="cart" id="cart">
+		<div class="cart__inner">
+			<!-- Cart header -->
+			<div class="cart__header">
+				<div class="cart__btn cart__btn--close">
+					<i class="cart__btn_icon">
+						<svg class="cart__btn_svg" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7 1L2 6L7 11" stroke-width="2"/>
+						</svg>
+					</i>
+					<span class="cart__btn_text">
+						Продовжити покупки
+					</span>
+				</div>
+				<p class="cart__title" data-count="39">
+					Корзина
+				</p>
+			</div>
+			<!-- Cart form -->
+			<form action="" method="GET" name="cart" class="cart__form" id="cart">
+				<div class="cart__order">
+					<ul class="cart__order_list">
+
+					</ul>
+				</div>
+				<!-- Form footer -->
+				<div class="cart__footer">
+					<button class="cart__submit" type="submit">
+						Зробити замовлення
+					</button>
+					<p class="cart__total">
+						0
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- MENU -->
+	<div class="menu" id="menu">
+		<div class="menu__inner">
+			<!-- Head -->
+			<div class="menu__head">
+				<i class="menu__btn">
+					<svg class="menu__btn_svg menu__btn_svg--close" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.71743 3.78249L16.6169 13.682L13.0814 17.2175L3.1819 7.31802L6.71743 3.78249Z" />
+						<path d="M16.6169 7.31802L6.71743 17.2175L3.1819 13.682L13.0814 3.78249L16.6169 7.31802Z" />
+					</svg>
+				</i>
+				<div class="menu__callback callback__btn">
+					<p class="menu__callback_title">
+						Замовити дзвінок
+					</p>
+				</div>
+				<div class="menu__language language">
+					<div class="menu__language_inner">
+						<p class="menu__language_title">
+							ук
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Body -->
+			<div class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="catalog.html" class="menu__link">
+							Повний каталог
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="catalog.html" class="menu__link">
+							Продукція для лабораторій
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="catalog.html" class="menu__link">
+							Медичне обладнання
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="catalog.html" class="menu__link">
+							Медичний інструмент
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="news.html" class="menu__link">
+							Новини
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="about.html" class="menu__link">
+							Про компанію
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="payment.html" class="menu__link">
+							Оплата і доставка
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="service.html" class="menu__link">
+							Сервісне обслуговування
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Завантажити ціни
+							<i class="menu__link_icon">
+								<svg class="menu__link_svg" width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7 12L0 6.54545H14L7 12Z" />
+									<path d="M4.2 0H9.8V6.54545H4.2V0Z" />
+								</svg>
+							</i>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="contacts.html" class="menu__link">
+							Контакти
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Footer -->
+			<div class="menu__footer">
+				<div class="menu__contacts">
+					<ul class="menu__contacts_list">
+						<li class="menu__contacts_item">
+							<a href="tel:+380532633000" class="menu__contacts_link">
+								+380 (532) 633-000
+							</a>
+						</li>
+						<li class="menu__contacts_item">
+							<a href="tel:+380443606970" class="menu__contacts_link">
+								+380 (44) 360-69-70
+							</a>
+						</li>
+						<li class="menu__contacts_item">
+							<a href="tel:+380504041786" class="menu__contacts_link">
+								+380 (50) 40-41-786
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu__weekdays">
+					<ul class="menu__weekdays_list">
+						<li class="menu__weekdays_item">
+							Працюємо:
+						</li>
+						<li class="menu__weekdays_item">
+							Пн -Пт: 8:30 - 17:30
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="header__inner">
+			<!-- Menu btn -->
+			<div class="header__menu menu__btn">
+				<i class="header__menu_icon">
+					<svg class="menu__btn_svg" width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 0H5.33333V4.8H0V0Z" />
+						<path d="M0 8.2H5.33333V13H0V8.2Z" />
+						<path d="M8.66667 0H14V4.8H8.66667V0Z" />
+						<path d="M8.66667 8.2H14V13H8.66667V8.2Z" />
+					</svg>
+				</i>
+			</div>
+			<!-- Logo -->
+			<div class="header__logo">
+				<a href="index.html" class="header__logo_link">
+					<i class="header__logo_icon">
+						<svg class="header__logo_svg" width="133" height="17" viewBox="0 0 133 17" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.004 16L13.96 8.982L10.616 14.614H8.328L4.984 9.224V16H0.254V0.599999H4.522L9.538 8.806L14.422 0.599999H18.69L18.734 16H14.004ZM21.2442 0.599999H26.4362V16H21.2442V0.599999ZM36.8996 16.352C35.2716 16.352 33.805 16.0147 32.4996 15.34C31.1943 14.6507 30.1676 13.6973 29.4196 12.48C28.6863 11.248 28.3196 9.85467 28.3196 8.3C28.3196 6.74533 28.6863 5.35933 29.4196 4.142C30.1676 2.91 31.1943 1.95667 32.4996 1.282C33.805 0.592666 35.2716 0.248 36.8996 0.248C38.3956 0.248 39.7303 0.512 40.9036 1.04C42.077 1.568 43.045 2.33067 43.8076 3.328L40.5296 6.254C39.5763 5.05133 38.4543 4.45 37.1636 4.45C36.0783 4.45 35.2056 4.802 34.5456 5.506C33.8856 6.19533 33.5556 7.12667 33.5556 8.3C33.5556 9.47333 33.8856 10.412 34.5456 11.116C35.2056 11.8053 36.0783 12.15 37.1636 12.15C38.4543 12.15 39.5763 11.5487 40.5296 10.346L43.8076 13.272C43.045 14.2693 42.077 15.032 40.9036 15.56C39.7303 16.088 38.3956 16.352 36.8996 16.352ZM51.9067 12.128H50.4987V16H45.3067V0.599999H52.7207C54.1434 0.599999 55.3827 0.834666 56.4387 1.304C57.4947 1.77333 58.3087 2.448 58.8807 3.328C59.4527 4.208 59.7387 5.23467 59.7387 6.408C59.7387 7.508 59.4894 8.46867 58.9907 9.29C58.4921 10.1113 57.7734 10.764 56.8347 11.248L60.0687 16H54.5247L51.9067 12.128ZM54.5027 6.408C54.5027 5.836 54.3267 5.396 53.9747 5.088C53.6227 4.76533 53.0947 4.604 52.3907 4.604H50.4987V8.212H52.3907C53.0947 8.212 53.6227 8.058 53.9747 7.75C54.3267 7.42733 54.5027 6.98 54.5027 6.408ZM69.7733 16.352C68.116 16.352 66.6273 16.0073 65.3073 15.318C63.9873 14.6287 62.9533 13.6753 62.2053 12.458C61.4573 11.226 61.0833 9.84 61.0833 8.3C61.0833 6.76 61.4573 5.38133 62.2053 4.164C62.9533 2.932 63.9873 1.97133 65.3073 1.282C66.6273 0.592666 68.116 0.248 69.7733 0.248C71.4306 0.248 72.9193 0.592666 74.2393 1.282C75.5593 1.97133 76.5933 2.932 77.3413 4.164C78.0893 5.38133 78.4633 6.76 78.4633 8.3C78.4633 9.84 78.0893 11.226 77.3413 12.458C76.5933 13.6753 75.5593 14.6287 74.2393 15.318C72.9193 16.0073 71.4306 16.352 69.7733 16.352ZM69.7733 12.15C70.4186 12.15 70.998 11.996 71.5113 11.688C72.0393 11.3653 72.4573 10.918 72.7653 10.346C73.0733 9.75933 73.2273 9.07733 73.2273 8.3C73.2273 7.52267 73.0733 6.848 72.7653 6.276C72.4573 5.68933 72.0393 5.242 71.5113 4.934C70.998 4.61133 70.4186 4.45 69.7733 4.45C69.128 4.45 68.5413 4.61133 68.0133 4.934C67.5 5.242 67.0893 5.68933 66.7813 6.276C66.4733 6.848 66.3193 7.52267 66.3193 8.3C66.3193 9.07733 66.4733 9.75933 66.7813 10.346C67.0893 10.918 67.5 11.3653 68.0133 11.688C68.5413 11.996 69.128 12.15 69.7733 12.15ZM94.0978 16L94.0538 8.982L90.7097 14.614H88.4218L85.0778 9.224V16H80.3478V0.599999H84.6158L89.6318 8.806L94.5158 0.599999H98.7838L98.8278 16H94.0978ZM114.142 12.084V16H101.338V0.599999H113.856V4.516H106.442V6.32H112.954V10.06H106.442V12.084H114.142ZM116.141 0.599999H123.731C125.447 0.599999 126.957 0.915333 128.263 1.546C129.583 2.162 130.602 3.04933 131.321 4.208C132.054 5.36667 132.421 6.73067 132.421 8.3C132.421 9.86933 132.054 11.2333 131.321 12.392C130.602 13.5507 129.583 14.4453 128.263 15.076C126.957 15.692 125.447 16 123.731 16H116.141V0.599999ZM123.511 11.952C124.625 11.952 125.513 11.6367 126.173 11.006C126.847 10.3607 127.185 9.45867 127.185 8.3C127.185 7.14133 126.847 6.24667 126.173 5.616C125.513 4.97067 124.625 4.648 123.511 4.648H121.333V11.952H123.511Z" />
+						</svg>
+					</i>
+				</a>
+			</div>
+			<!-- NAV -->
+			<nav class="header__nav nav" id="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							<p class="nav__link_text">
+								Продукція для лабораторій
+							</p>
+						</a>
+						<div class="subnav">
+							<ul class="subnav__list">
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторное оборудование в Украине
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Реактивы и тест-системы для клинической иммунологии
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические тест-полоски НВП «Норма»
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторный пластик
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические тест-полоски PHAN «Ерба-Лахема» Чехия
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторные аксессуары и расходные материалы
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические наборы "Ерба-Лахема", Чехия
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические наборы отечественных производителей
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Химические реактивы
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Термометры, ареометры, гигрометры
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторная посуда
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Системы забора крови
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							<p class="nav__link_text">
+								Медичне обладнання
+							</p>
+						</a>
+						<div class="subnav">
+							<ul class="subnav__list">
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторное оборудование в Украине
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Реактивы и тест-системы для клинической иммунологии
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические тест-полоски НВП «Норма»
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторный пластик
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические тест-полоски PHAN «Ерба-Лахема» Чехия
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторные аксессуары и расходные материалы
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические наборы "Ерба-Лахема", Чехия
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические наборы отечественных производителей
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Химические реактивы
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Термометры, ареометры, гигрометры
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторная посуда
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Системы забора крови
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							<p class="nav__link_text">
+								Медичний інструмент
+							</p>
+						</a>
+						<div class="subnav">
+							<ul class="subnav__list">
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторное оборудование в Украине
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Реактивы и тест-системы для клинической иммунологии
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические тест-полоски НВП «Норма»
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторный пластик
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические тест-полоски PHAN «Ерба-Лахема» Чехия
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторные аксессуары и расходные материалы
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические наборы "Ерба-Лахема", Чехия
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Диагностические наборы отечественных производителей
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Химические реактивы
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Термометры, ареометры, гигрометры
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Лабораторная посуда
+									</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#" class="subnav__link">
+										Системы забора крови
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<!-- Contacts -->
+			<div class="header__contacts">
+				<a href="tel:+380504041786" class="header__contacts_link header__contacts_link--arrow-down">
+					+380 (50) 40-41-786
+				</a>
+				<ul class="header__contacts_list">
+					<li class="header__contacts_item">
+						<a href="tel:+380443606970" class="header__contacts_link">
+							+380 (44) 360-69-70
+						</a>
+					</li>
+					<li class="header__contacts_item">
+						<a href="tel:+380532633000" class="header__contacts_link">
+							+380 (532) 633-000
+						</a>
+					</li>
+					<li class="header__contacts_item">
+						<p class="header__contacts_item_span callback__btn">
+							Замовити дзвінок
+						</p>
+					</li>
+				</ul>
+			</div>
+			<!-- Search -->
+			<div class="header__search search__btn">
+				<div class="header__search_inner">
+					<i class="header__search_icon">
+						<svg class="header__search_svg" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.80624 7.7457C9.39675 6.93931 9.74996 5.94881 9.74996 4.87502C9.74996 2.18703 7.56294 0 4.87497 0C2.18699 0 0 2.18703 0 4.87502C0 7.56301 2.18701 9.75004 4.87499 9.75004C5.94877 9.75004 6.93936 9.39678 7.74575 8.80627L10.9395 12L12 10.9395C12 10.9394 8.80624 7.7457 8.80624 7.7457ZM4.87499 8.25002C3.01391 8.25002 1.50001 6.73611 1.50001 4.87502C1.50001 3.01393 3.01391 1.50001 4.87499 1.50001C6.73607 1.50001 8.24998 3.01393 8.24998 4.87502C8.24998 6.73611 6.73605 8.25002 4.87499 8.25002Z" />
+						</svg>
+					</i>
+					<p class="header__search_title">
+						Пошук
+					</p>
+				</div>
+			</div>
+			<!-- Language -->
+			<div class="header__language language">
+				<div class="header__language_inner">
+					<div class="select_wrap">
+						<!-- <p class="header__language_item">
+							ук
+						</p> -->
+						<select name="language" id="language" class="header__language_select">
+							<option value="ua">ук</option>
+							<option value="ru">ру</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!-- Cart btn -->
+			<div class="header__cart cart__btn">
+				<i class="header__cart_icon" data-orders="10">
+					<svg class="header__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+						<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+						<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+					</svg>
+				</i>
+			</div>
+		</div>
+	</header>
+	<!-- MAIN -->
+	<main class="main" id="main">
+		<!-- REQUEST -->
+		<div class="request" id="request">
+			<div class="request__head">
+				<!-- Breadcrumbs (module) -->
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Головна
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Продукція
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Продукція для лабораторій
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Лабораторне обладнання в Україні
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__actual">
+								Дистилятори води медичні
+							</span>
+						</li>
+					</ul>
+				</div>
+				<!-- Settings (module) -->
+				<div class="settings">
+					<div class="settings__inner">
+						<div class="settings__showing">
+							<p class="settings__showing_title">
+								Показувати по
+							</p>
+							<div class="select_wrap">
+								<select name="settings_showing" id="settings_showing" class="settings__showing_select">
+									<option value="16">16</option>
+									<option value="32">32</option>
+									<option value="64">64</option>
+									<option value="128">128</option>
+								</select>
+							</div>
+						</div>
+						<div class="settings__sort">
+							<p class="settings__sort_title">
+								Сортувати
+							</p>
+							<div class="select_wrap">
+								<select name="settings_sort" id="settings_sort" class="settings__sort_select">
+									<option value="0">За популярністю</option>
+									<option value="1">Новий товар</option>
+									<option value="2">Зростанню ціни</option>
+									<option value="3">Спадання ціни</option>
+									<option value="4">Акційні</option>
+								</select>
+							</div>
+						</div>
+						<div class="settings__grid" id="toggle">
+							<i class="settings__grid_icon settings__grid_icon--active" id="toggle_grid">
+								<svg class="settings__grid_sgv" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 0H15V3H12V0Z" />
+									<path d="M6 0H9V3H6V0Z" />
+									<path d="M0 0H3V3H0V0Z" />
+									<path d="M12 6H15V9H12V6Z" />
+									<path d="M6 6H9V9H6V6Z" />
+									<path d="M0 6H3V9H0V6Z" />
+									<path d="M12 12H15V15H12V12Z" />
+									<path d="M6 12H9V15H6V12Z" />
+									<path d="M0 12H3V15H0V12Z" />
+								</svg>
+							</i>
+							<i class="settings__grid_icon" id="toggle_line">
+								<svg class="settings__grid_sgv" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 0H15V3H0V0Z" />
+									<path d="M0 6H15V9H0V6Z" />
+									<path d="M0 12H15V15H0V12Z" />
+								</svg>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="request__body">
+				<!-- REQUEST -->
+				<div class="request__top">
+					<p class="request__title">
+						Товари, що відповідають критеріям пошуку:
+					</p>
+					<p class="request__search">
+						Термостат суховоздушный
+					</p>
+				</div>
+				<!-- Main -->
+				<div class="request__main">
+					<!-- Product -->
+					<div class="product">
+						<ul class="product__list">
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/1.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Контейнер для дезинфекции ЕДПО-1-02-2
+												</p>
+												<p class="tile__category">
+													Стерилизация
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													300 ГРН
+												</span>
+												<span class="tile__cost_price">
+													330 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/2.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Термостат суховоздушный TC-80 MICROmed
+												</p>
+												<p class="tile__category">
+													Термостаты
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													17 970 ГРН
+												</span>
+												<span class="tile__cost_price">
+													18750 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/3.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Бидистиллятор DE-10С MICROmed
+												</p>
+												<p class="tile__category">
+													Бидистилляторы
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													40 440 ГРН
+												</span>
+												<span class="tile__cost_price">
+													48 150 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--sale">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/4.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Баня водяная ВБ-4 MICROmed
+												</p>
+												<p class="tile__category">
+													Водяная баня
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													4 050 ГРН
+												</span>
+												<span class="tile__cost_price">
+													4 500 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--new">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/2.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Чашка Петри 1-100 ТС MICROmed
+												</p>
+												<p class="tile__category">
+													Чашка Петри
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													17 970 ГРН
+												</span>
+												<span class="tile__cost_price">
+													22.20 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--new">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/3.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Стереомікроскоп учбовий My First Lab SMD-04
+												</p>
+												<p class="tile__category">
+													Микроскопы
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													40 440 ГРН
+												</span>
+												<span class="tile__cost_price">
+													1 790 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--discontinued">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/4.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Центрифуга лабораторная СМ-3М MICROmed для пробирок 15 мл
+												</p>
+												<p class="tile__category">
+													Лабораторные центрифуги
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													4 050 ГРН
+												</span>
+												<span class="tile__cost_price">
+													11 520 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/5.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Пробирка П-1-10-0,2 центрифужная 10 мл, градуированная
+												</p>
+												<p class="tile__category">
+													Пробирки для исследований
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													10 560 ГРН
+												</span>
+												<span class="tile__cost_price">
+													6.50 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/1.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Контейнер для дезинфекции ЕДПО-1-02-2
+												</p>
+												<p class="tile__category">
+													Стерилизация
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													300 ГРН
+												</span>
+												<span class="tile__cost_price">
+													330 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--unavailable">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/2.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Термостат суховоздушный TC-80 MICROmed
+												</p>
+												<p class="tile__category">
+													Термостаты
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													17 970 ГРН
+												</span>
+												<span class="tile__cost_price">
+													18750 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/3.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Бидистиллятор DE-10С MICROmed
+												</p>
+												<p class="tile__category">
+													Бидистилляторы
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													40 440 ГРН
+												</span>
+												<span class="tile__cost_price">
+													48 150 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--sale">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/4.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Баня водяная ВБ-4 MICROmed
+												</p>
+												<p class="tile__category">
+													Водяная баня
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													4 050 ГРН
+												</span>
+												<span class="tile__cost_price">
+													4 500 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--top">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/2.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Чашка Петри 1-100 ТС MICROmed
+												</p>
+												<p class="tile__category">
+													Чашка Петри
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													17 970 ГРН
+												</span>
+												<span class="tile__cost_price">
+													22.20 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/3.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Стереомікроскоп учбовий My First Lab SMD-04
+												</p>
+												<p class="tile__category">
+													Микроскопы
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													40 440 ГРН
+												</span>
+												<span class="tile__cost_price">
+													1 790 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/4.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Центрифуга лабораторная СМ-3М MICROmed для пробирок 15 мл
+												</p>
+												<p class="tile__category">
+													Лабораторные центрифуги
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													4 050 ГРН
+												</span>
+												<span class="tile__cost_price">
+													11 520 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--top">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/5.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Пробирка П-1-10-0,2 центрифужная 10 мл, градуированная
+												</p>
+												<p class="tile__category">
+													Пробирки для исследований
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													10 560 ГРН
+												</span>
+												<span class="tile__cost_price">
+													6.50 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/3.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Бидистиллятор DE-10С MICROmed
+												</p>
+												<p class="tile__category">
+													Бидистилляторы
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													40 440 ГРН
+												</span>
+												<span class="tile__cost_price">
+													48 150 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--sale">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/sale/4.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Баня водяная ВБ-4 MICROmed
+												</p>
+												<p class="tile__category">
+													Водяная баня
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													4 050 ГРН
+												</span>
+												<span class="tile__cost_price">
+													4 500 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile tile--top">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/2.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Чашка Петри 1-100 ТС MICROmed
+												</p>
+												<p class="tile__category">
+													Чашка Петри
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													17 970 ГРН
+												</span>
+												<span class="tile__cost_price">
+													22.20 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product__item">
+								<div class="tile">
+									<div class="tile__inner">
+										<a href="#" class="tile__link">
+											<div class="tile__photo">
+												<div class="tile__discontinued">
+													<p class="tile__discontinued_title">
+														Знятий з виробництва
+													</p>
+												</div>
+												<div class="tile__unavailable">
+													<p class="tile__unavailable_title">
+														Немає в наявності
+													</p>
+													<p class="tile__unavailable_expected">
+														Очікується 10.03.2020
+													</p>
+												</div>
+												<img src="img/home/new/3.png" alt="image" class="tile__img">
+											</div>
+											<div class="tile__description">
+												<p class="tile__title">
+													Стереомікроскоп учбовий My First Lab SMD-04
+												</p>
+												<p class="tile__category">
+													Микроскопы
+												</p>
+												<p class="tile__description_short">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed dolorem temporibus voluptates iste totam.
+												</p>
+											</div>
+										</a>
+										<!-- Counter (module) -->
+										<div class="counter">
+											<div class="counter__inner">
+												<button type="button" class="counter__btn counter__btn--subtract counter_subtract">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+															<rect width="10" height="2"></rect>
+														</svg>
+													</i>
+												</button>
+												<input type="number" min="1" value="1" class="counter__input">
+												<button type="button" class="counter__btn counter__btn--add counter_add">
+													<i class="counter__btn_icon">
+														<svg class="counter__btn_svg" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+															<path d="M0 4H10V6H0V4Z"></path>
+															<path d="M6 8.74228e-08L6 10H4L4 0L6 8.74228e-08Z"></path>
+														</svg>
+													</i>
+												</button>
+											</div>
+										</div>
+										<div class="tile__footer">
+											<div class="tile__logo">
+												<img src="img/product/logo/1.png" alt="image" class="tile__logo_img">
+											</div>
+											<p class="tile__cost">
+												<span class="tile__cost_sale">
+													40 440 ГРН
+												</span>
+												<span class="tile__cost_price">
+													1 790 ГРН
+												</span>
+											</p>
+											<a href="#" class="tile__cart_link">
+												<i class="tile__cart_icon">
+													<svg class="tile__cart_svg" width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.4381 20.1879C19.8063 20.1879 18.4832 21.4887 18.4832 23.0937C18.4832 24.699 19.8059 26 21.4377 26C23.07 26 24.3926 24.699 24.3926 23.0941C24.3911 21.4896 23.0691 20.1895 21.4381 20.1879ZM21.4381 24.6988C20.5366 24.6988 19.8063 23.9803 19.8063 23.0941C19.8063 22.2076 20.5366 21.4891 21.4377 21.4891C22.3392 21.4887 23.0695 22.2076 23.0695 23.0937C23.0685 23.9797 22.3388 24.6973 21.4381 24.6988Z" />
+														<path d="M29.3381 4.09892H5.86423L5.45136 2.44698C5.09478 1.00592 3.77939 -0.00607874 2.27173 2.7483e-05H0.661423C0.296151 2.7483e-05 0 0.291293 0 0.650745C0 1.00999 0.296151 1.30126 0.661423 1.30126H2.27173C3.16887 1.29413 3.95343 1.89498 4.16659 2.75229L7.37851 15.6529C7.73696 17.0911 9.05339 18.0986 10.5588 18.0872H24.298C25.8245 18.0992 27.1529 17.0634 27.4894 15.5993L29.9832 4.87908C30.0283 4.68857 29.9814 4.48829 29.8557 4.33624C29.7293 4.18338 29.5387 4.09586 29.3381 4.09892ZM26.1999 15.3134C25.9983 16.1839 25.2059 16.7976 24.298 16.786H10.5588C9.66287 16.7955 8.87789 16.1973 8.6639 15.3416L6.18791 5.40015H28.5081L26.1999 15.3134Z" />
+														<path d="M12.4901 20.1879C10.8582 20.1879 9.53519 21.4887 9.53519 23.0937C9.53519 24.699 10.858 26 12.4899 26C14.1219 26 15.4447 24.699 15.4447 23.0941C15.4433 21.4896 14.1213 20.1895 12.4901 20.1879ZM12.4901 24.6988C11.5888 24.6988 10.8582 23.9803 10.8582 23.0941C10.8582 22.2076 11.5888 21.4891 12.4899 21.4891C13.3911 21.4887 14.1217 22.2076 14.1217 23.0937C14.1207 23.9797 13.3907 24.6973 12.4901 24.6988Z" />
+													</svg>
+												</i>
+												В корзину
+											</a>
+											<a href="#" class="tile__unavailable_link">
+												Повідомити про наявність
+											</a>
+											<a href="#" class="tile__discontinued_link">
+												Переглянути аналоги
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- Pagination -->
+					<div class="pagination">
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a href="#" class="pagination__link pagination__link--prev">
+									<i class="pagination__link_icon">
+										<svg class="pagination__link_svg" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7 1L2 6L7 11" stroke-width="2"/>
+										</svg>
+									</i>
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link pagination__link--active">
+									1
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									2
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									3
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									4
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									5
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									6
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									7
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link pagination__link--next">
+									<i class="pagination__link_icon">
+										<svg class="pagination__link_svg" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 1L6 6L1 11" stroke-width="2"/>
+										</svg>
+									</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="footer__subscribe">
+			<div class="footer__subscribe_inner">
+				<p class="footer__subscribe_title">
+					Подпишитесь на наши новости
+				</p>
+				<form action="" method="post" class="footer__subscribe_form" name="subscribe" id="subscribe">
+					<input class="footer__subscribe_input footer__subscribe_input--email" type="email" name="email" placeholder="Email" autocomplete="off" pattern="^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$">
+					<input class="footer__subscribe_input footer__subscribe_input--name" type="name" name="name" placeholder="Имя" autocomplete="off">
+					<button class="footer__subscribe_button footer__subscribe_button--submit" type="submit">
+						Подписаться
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer__contacts">
+			<div class="footer__contacts_inner">
+				<p class="footer__contacts_logo">
+					<a href="index.html" class="footer__contacts_link">
+						MICROMED
+					</a>
+				</p>
+				<ul class="footer__contacts_list">
+					<li class="footer__contacts_item footer__contacts_item--help">
+						<p class="footer__contacts_item_title">
+							Помощь
+						</p>
+						<div class="footer__contacts_item_description">
+							<a href="#" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								Статьи
+							</a>
+							<a href="#" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								Условия оплата
+							</a>
+							<a href="#" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								Условия доставки
+							</a>
+							<a href="#" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								Мой аккаунт
+							</a>
+						</div>
+					</li>
+					<li class="footer__contacts_item footer__contacts_item--phones">
+						<p class="footer__contacts_item_title">
+							Телефоны
+						</p>
+						<div class="footer__contacts_item_description">
+							<a href="tel:+380532633000" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								(0532) 633-000 (многоканальный)
+							</a>
+							<a href="tel:+380504041786" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								(050) 40-41-786
+							</a>
+							<a href="tel:+380443606970" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								(044) 360-69-70
+							</a>
+							<a href="tel:+380949253970" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								(094) 925-39-70
+							</a>
+						</div>
+					</li>
+					<li class="footer__contacts_item footer__contacts_item--sales_department">
+						<p class="footer__contacts_item_title">
+							Отдел продаж
+						</p>
+						<div class="footer__contacts_item_description">
+							<span class="footer__contacts_item_description_block">
+								Инна Леонидовна
+							</span>
+							<a href="mailto:info@micromed.ua" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								e-mail: info@micromed.ua
+							</a>
+							<span class="footer__contacts_item_description_block">
+								Лилия Викторовна
+							</span>
+							<a href="mailto:burs@micromed.ua" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								e-mail: burs@micromed.ua
+							</a>
+							<span class="footer__contacts_item_description_block">
+								Наталья Евгеньевна
+							</span>
+							<a href="mailto:nerozia@micromed.ua" class="footer__contacts_item_description_block footer__contacts_item_description_link">
+								e-mail: nerozia@micromed.ua
+							</a>
+						</div>
+					</li>
+					<li class="footer__contacts_item footer__contacts_item--schedule">
+						<p class="footer__contacts_item_title">
+							График работы
+						</p>
+						<div class="footer__contacts_item_description">
+							<span class="footer__contacts_item_description_block">
+								ПН - ПТ
+							</span>
+							<span class="footer__contacts_item_description_block">
+								с 8:30 до 17:30
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			<div class="footer__copyright_inner">
+				<p class="footer__copyright_note">
+					&copy; 2020 Все права защищены
+				</p>
+				<a href="https://www.facebook.com/MangoWebAgency" class="footer__copyright_link">
+					<span class="footer__copyright_link_span">
+						Разработка сайта
+					</span>
+					<i class="footer__copyright_icon">
+						<svg class="footer__copyright_svg" width="61" height="31" viewBox="0 0 61 31" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M31.6869 0.934664C43.2871 -2.19181 53.3517 2.99753 53.1936 9.50489C50.6133 6.87729 48.6942 5.90118 44.5503 4.91867C49.152 6.80307 50.3749 8.05376 52.1768 10.3387C47.6245 9.88901 43.5455 7.18856 39.9318 4.79617C36.8458 2.75308 34.0991 0.934664 31.6869 0.934664ZM49.9305 18.9032C50.1498 18.0238 50.3813 17.2207 50.6368 16.474L50.6509 16.4772L50.6475 16.4611L50.6452 16.4498C51.8723 12.877 53.6555 10.5964 57.3119 7.41209C52.3638 10.6602 50.1945 12.9913 48.4668 17.1493C47.5296 16.9697 46.5975 16.8799 45.6706 16.8799C44.1656 16.8799 42.9182 17.4235 41.9285 18.5106C40.9523 19.5853 40.4642 20.8392 40.4642 22.2722C40.4642 23.3223 40.7421 24.2117 41.298 24.9406C41.8539 25.6695 42.6403 26.0339 43.6572 26.0339C44.0639 26.0339 44.4503 25.9474 44.8164 25.7744C45.535 25.4286 46.3755 24.4897 47.3382 22.9578C47.3518 23.2914 47.3857 23.8596 47.4399 24.6627C47.5077 25.4657 47.5416 26.0771 47.5416 26.4972C47.5416 27.3496 47.2976 28.0475 46.8094 28.591C46.3213 29.1347 45.6434 29.4064 44.7757 29.4064C44.2741 29.4064 43.8402 29.2458 43.4741 28.9246C43.108 28.6034 42.925 28.2205 42.925 27.7757C42.925 27.6522 42.9453 27.5101 42.986 27.3495C42.8233 27.3248 42.6878 27.3124 42.5793 27.3124C42.0776 27.3124 41.6438 27.4669 41.2777 27.7757C40.9116 28.0846 40.7286 28.4613 40.7286 28.9061C40.7286 29.6225 41.0743 30.1476 41.7658 30.4811C42.4708 30.827 43.3114 31 44.2876 31C45.9417 31 47.2976 30.4997 48.3551 29.499C49.4126 28.5107 49.9414 27.2568 49.9414 25.7374C49.9414 25.305 49.8939 24.6441 49.799 23.7546C49.7041 22.8529 49.6567 22.0993 49.6567 21.494C49.6567 20.6415 49.748 19.7779 49.9305 18.9032ZM15.2733 22.8467L15.4767 18.8812C15.4767 17.5471 14.7921 16.8799 13.4226 16.8799C12.6363 16.8799 11.8431 17.2073 11.0432 17.862C10.2568 18.5168 9.61287 19.2766 9.11112 20.1413C9.15182 19.7336 9.17215 19.363 9.17215 19.0295C9.17215 17.6953 8.48749 17.0282 7.11804 17.0282C6.34524 17.0282 5.57243 17.3309 4.79961 17.9362C4.0268 18.5291 3.38962 19.2333 2.88791 20.0486C2.98288 19.1839 3.03026 18.6403 3.03026 18.4179C3.03026 17.9856 2.87438 17.6397 2.5625 17.3803C2.26426 17.1208 1.87104 16.9911 1.38294 16.9911C0.89484 16.9911 0.433897 17.0652 0 17.2135C0.311873 18.4242 0.467759 19.4989 0.467759 20.4377C0.467759 21.3643 0.406746 22.3031 0.284722 23.2543C0.162698 24.1932 0.101686 24.8479 0.101686 25.2186C0.101686 25.5769 0.244048 25.8609 0.52877 26.0709C0.82712 26.2686 1.20672 26.3674 1.66766 26.3674C2.14224 26.3674 2.59647 26.2933 3.03026 26.1451C2.82689 25.2927 2.69134 24.3353 2.62352 23.2729C2.65067 22.8652 2.84723 22.3216 3.2133 21.6422C3.593 20.9504 4.05394 20.3203 4.59624 19.7521C5.13863 19.1839 5.61992 18.8997 6.04019 18.8997C6.65028 18.8997 6.95539 19.2085 6.95539 19.8263C6.95539 20.1228 6.8808 20.8516 6.73164 22.0128C6.5826 23.174 6.50796 24.0017 6.50796 24.4959C6.50796 25.6695 7.08423 26.2563 8.23664 26.2563C8.58917 26.2563 9.02305 26.1821 9.53822 26.0339C9.22647 25.0703 9.0366 24.1005 8.96879 23.1246C8.96879 22.4823 9.38912 21.5928 10.2297 20.4563C11.0839 19.3197 11.816 18.7515 12.4261 18.7515C12.982 18.7515 13.2599 19.0603 13.2599 19.678C13.2599 19.9992 13.1854 20.7898 13.0362 22.0499C12.8871 23.2976 12.8125 24.1871 12.8125 24.7183C12.8125 25.8918 13.3888 26.4786 14.5412 26.4786C15.0293 26.4786 15.4632 26.4045 15.8428 26.2563C15.4632 25.1815 15.2733 24.0449 15.2733 22.8467ZM26.658 21.9202C26.658 20.4871 26.841 19.0603 27.2071 17.6397C25.5801 17.1332 23.9938 16.8799 22.4482 16.8799C20.9161 16.8799 19.6687 17.4791 18.7061 18.6774C17.7435 19.8633 17.2621 21.2469 17.2621 22.8282C17.2621 23.8658 17.5468 24.7367 18.1163 25.4409C18.6858 26.1327 19.4857 26.4786 20.5161 26.4786C20.95 26.4786 21.3703 26.3674 21.777 26.1451C22.6719 25.6509 23.6006 24.465 24.5632 22.5873C24.387 23.5014 24.2989 24.2241 24.2989 24.7553C24.2989 25.2741 24.4005 25.6756 24.6039 25.9598C24.8073 26.2315 25.1666 26.3674 25.6818 26.3674C26.197 26.3674 26.6987 26.2933 27.1867 26.1451C26.8343 24.7491 26.658 23.3408 26.658 21.9202ZM22.7126 18.455C23.2142 18.455 23.8244 18.5538 24.5429 18.7515C24.1091 20.2587 23.5193 21.6484 22.7735 22.9208C22.0279 24.1932 21.4178 24.8294 20.9432 24.8294C20.5364 24.8294 20.2314 24.5392 20.028 23.9585C19.8382 23.3779 19.7433 22.8034 19.7433 22.2352C19.7433 21.1605 19.9738 20.1042 20.4348 19.0665C20.9365 18.6588 21.6957 18.455 22.7126 18.455ZM38.2691 22.9578L38.4725 18.8812C38.4725 17.5471 37.7877 16.8799 36.4184 16.8799C35.5912 16.8799 34.7643 17.2135 33.9372 17.8806C33.1101 18.5354 32.439 19.3012 31.9238 20.1783C32.0322 19.3382 32.0865 18.7268 32.0865 18.3439C32.0865 17.9609 31.9305 17.6397 31.6188 17.3803C31.3204 17.1208 30.9273 16.9911 30.4392 16.9911C29.9511 16.9911 29.4901 17.0652 29.0562 17.2135C29.368 18.4242 29.524 19.4989 29.524 20.4377C29.524 21.3643 29.463 22.3031 29.341 23.2543C29.219 24.1932 29.1579 24.8479 29.1579 25.2186C29.1579 25.5769 29.3003 25.8609 29.585 26.0709C29.8833 26.2686 30.2629 26.3674 30.7239 26.3674C31.1984 26.3674 31.6526 26.2933 32.0865 26.1451C31.8695 25.2679 31.734 24.3476 31.6798 23.3841C31.7475 22.9146 31.978 22.3216 32.3712 21.6052C32.778 20.8763 33.2593 20.2216 33.8152 19.6409C34.3846 19.048 34.8931 18.7515 35.3405 18.7515C35.9506 18.7515 36.2557 19.0603 36.2557 19.678C36.2557 19.9992 36.1811 20.7898 36.032 22.0499C35.8828 23.2976 35.8083 24.1871 35.8083 24.7183C35.8083 25.8918 36.3844 26.4786 37.537 26.4786C38.025 26.4786 38.4588 26.4045 38.8385 26.2563C38.4588 25.1815 38.2691 24.082 38.2691 22.9578ZM45.6909 18.455C46.396 18.455 47.1078 18.5538 47.8263 18.7515C47.3518 20.1104 46.7281 21.389 45.9553 22.5873C45.1825 23.7855 44.5656 24.3847 44.1046 24.3847C43.6978 24.3847 43.4063 24.1129 43.23 23.5694C43.0538 23.0134 42.9657 22.4452 42.9657 21.8646C42.9657 20.864 43.2097 19.9189 43.6978 19.0295C44.3215 18.6465 44.9859 18.455 45.6909 18.455ZM52.5397 25.4039C53.2447 26.1945 54.3429 26.5898 55.8343 26.5898C57.3257 26.5898 58.5596 26.0895 59.5357 25.0888C60.5119 24.0759 61 22.8467 61 21.4013C61 18.313 59.4951 16.7687 56.4851 16.7687C55.0208 16.7687 53.8209 17.2938 52.8854 18.3439C51.9499 19.3938 51.4822 20.6354 51.4822 22.0684C51.4822 23.489 51.8346 24.6008 52.5397 25.4039ZM54.004 20.9566C54.004 20.2401 54.126 19.5236 54.37 18.8071C54.953 18.4983 55.6377 18.3439 56.4241 18.3439C57.7934 18.3439 58.4782 19.6595 58.4782 22.2908C58.4782 23.2173 58.329 23.9029 58.0308 24.3476C57.746 24.7923 57.1426 25.0147 56.2207 25.0147C55.3123 25.0147 54.7022 24.6133 54.3904 23.8102C54.2412 23.4149 54.1395 23.0196 54.0853 22.6243C54.031 22.229 54.004 21.6731 54.004 20.9566ZM51.6372 15.4773C54.1229 17.3578 58.8762 15.5564 60.9218 10.9328C60.2432 11.7118 58.7829 12.0897 57.1414 12.5144C55.2211 13.0112 53.0529 13.5721 51.5988 14.9146C52.9939 14.9753 53.824 14.9322 55.8505 13.9767C54.3034 15.038 53.3843 15.383 51.6372 15.4773Z" />
+						</svg>
+					</i>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/lib/jquery-3.4.1.min.js"></script>
+	<!-- Slick slider -->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<!-- Main script -->
+	<script src="js/main.js"></script>
+</body>
+</html>

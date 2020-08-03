@@ -1,0 +1,405 @@
+.contacts {
+
+    &__head {
+        padding: 1.41% 2.24%;
+        border-bottom: 1px solid $gray_1;
+    }
+
+    &__all {
+        padding: 2.08% 2.24% 3.13%;
+        border-bottom: 1px solid $gray_1;
+    }
+
+    &__title {
+        @include adaptiv-font(40, 49, 14, 17, "Montserrat-Bold");
+        // @include font(40px, 49px, "Montserrat-Bold");
+
+        margin-bottom: 4.48%;
+        color: $black_0;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__callback {
+        padding: 4.7% 2.24%;
+
+        &_title {
+            @include adaptiv-font(14, 24, 10, 18, "Montserrat-Bold");
+            // @include font(14px, 24px, "Montserrat-Bold");
+
+            margin-bottom: 24px;
+            color: $gray_10;
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.25fr;
+        grid-gap: 7.1%;
+
+        &_item {
+
+            &--row {
+                display: flex;
+            }
+        }
+
+        &_textarea {
+            display: flex;
+            flex-direction: column;
+            margin-right: 6.29%;
+            flex-grow: 1;
+
+            p {
+                @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+                // @include font(14px, 24px, "Montserrat-Regular");
+    
+                margin: 6px 0;
+                color: $gray_10;
+            }
+
+            textarea {
+                flex-grow: 1;
+                resize: none;
+                border: 1px solid $gray_13;
+            }
+        }
+    }
+
+    &__input {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+        // @include font(14px, 24px, "Montserrat-Regular");
+
+        width: 100%;
+        padding: 6px 0;
+        border: 0;
+        border-bottom: 1px solid $gray_13;
+
+        &:first-child {
+            margin-bottom: 30px;
+        }
+
+        &:focus {
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    &__button {
+        @include adaptiv-font(14, 18, 12, 15, "Montserrat-Bold");
+        // @include font(14px, 18px, "Montserrat-Bold");
+
+        align-self: flex-end;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        color: $blue_0;
+        cursor: pointer;
+    }
+
+    &__map {
+        position: relative;
+        height: 0;
+        padding-bottom: 20.83%;
+
+        &_address {
+            @include adaptiv-font(18, 24, 10, 12, "Montserrat-Bold");
+            // @include font(18px, 24px, "Montserrat-Bold");
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 340px;
+            padding: 1.35% 2.29%;
+            background-color: $gray_14;
+            color: $white_0;
+            z-index: 1;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.phone {
+
+    &__title {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Bold");
+        // @include font(14px, 24px, "Montserrat-Bold");
+
+        margin-bottom: 24px;
+        color: $gray_10;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 30px;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+        // @include font(14px, 24px, "Montserrat-Regular");
+
+        color: $gray_10;
+        white-space: nowrap;
+    }
+
+    &__link {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+        // @include font(14px, 24px, "Montserrat-Regular");
+
+        color: $gray_10;
+    }
+}
+
+.mail {
+
+    &__title {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Bold");
+        // @include font(14px, 24px, "Montserrat-Bold");
+
+        margin-bottom: 24px;
+        color: $gray_10;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 30px;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+        // @include font(14px, 24px, "Montserrat-Regular");
+
+        display: flex;
+        flex-direction: column;
+        color: $gray_10;
+        white-space: nowrap;
+    }
+
+    &__link {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+        // @include font(14px, 24px, "Montserrat-Regular");
+
+        color: $gray_10;
+    }
+}
+
+.work_day {
+
+    &__title {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Bold");
+        // @include font(14px, 24px, "Montserrat-Bold");
+
+        margin-bottom: 24px;
+        color: $gray_10;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 30px;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        @include adaptiv-font(14, 24, 10, 18, "Montserrat-Regular");
+        // @include font(14px, 24px, "Montserrat-Regular");
+
+        display: flex;
+        flex-direction: column;
+        color: $gray_10;
+        white-space: nowrap;
+    }
+}
+
+// 0 - 1440
+@include respond-to(desktop-extra) {
+
+    .contacts {
+
+        &__description {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-gap: 30px;
+            justify-content: flex-start;
+        }
+    }
+}
+
+// 0 - 1280
+@include respond-to(desktop) {
+
+    .contacts {
+
+        &__item {
+
+            &.mail {
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+        }
+    }
+}
+
+// 0 - 1024
+@include respond-to(tablet) {
+
+    .contacts {
+
+        &__form {
+            grid-gap: 3%;
+        }
+    }
+}
+
+// 0 - 767
+@include respond-to(mobile) {
+
+    .contacts {
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__head {
+            padding: 10px 20px;
+        }
+
+        &__all {
+            padding: 25px 20px;
+            margin-bottom: 0;
+        }
+
+        &__description {
+            grid-template-columns: auto;
+        }
+
+        &__item {
+
+            &.mail {
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+
+        &__callback {
+            padding: 40px 20px;
+        }
+
+        &__form {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+
+            &_item {
+
+                &--row {
+                    flex-direction: column;
+                }
+            }
+
+            &_textarea {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__input {
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            align-self: flex-start;
+        }
+
+        &__map {
+            padding-bottom: 230px;
+
+            &_address {
+                padding: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    .phone {
+
+        &__title {
+            margin-bottom: 18px;
+        }
+    }
+
+    .mail {
+
+        &__title {
+            margin-bottom: 18px;
+        }
+
+        &__list {
+            grid-template-columns: repeat(2, auto);
+            grid-gap: 20px;
+        }
+    }
+
+    .work_day {
+
+        &__title {
+            margin-bottom: 18px;
+        }
+    }
+}
+
+// 0 - 480
+@include respond-to(mobile_small) {
+
+    .contacts {
+
+        &__map {
+
+            &_address {
+                width: 100%;
+            }
+        }
+    }
+
+    .phone {
+
+        &__list {
+            grid-template-columns: auto;
+        }
+    }
+
+    .mail {
+
+        &__list {
+            grid-template-columns: auto;
+            grid-gap: unset;
+        }
+    }
+
+    .work_day {
+
+        &__list {
+            grid-template-columns: auto;
+        }
+    }
+}

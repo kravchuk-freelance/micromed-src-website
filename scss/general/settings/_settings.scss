@@ -1,0 +1,63 @@
+.settings {
+    width: 34.9%;
+    min-width: 525px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__showing {
+        display: flex;
+
+        &_title {
+            @include font(14px, 17px, "Montserrat-Regular");
+
+            margin-right: 5px;
+            color: $gray_11;
+        }
+    }
+
+    &__sort {
+        display: flex;
+
+        &_title {
+            @include font(14px, 17px, "Montserrat-Regular");
+
+            margin-right: 5px;
+            color: $gray_11;
+        }
+    }
+
+    &__grid {
+        display: flex;
+
+        &_icon {
+            display: inline-block;
+            width: 15px;
+            fill: $gray_13;
+            cursor: pointer;
+
+            &:first-child {
+                margin-right: 36px;
+            }
+
+            &--active {
+                fill: $blue_0;
+            }
+        }
+    }
+
+    .select_wrap {
+        @include font(14px, 17px, "Montserrat-Regular");
+
+        color: $black_0;
+    }
+}
+
+@include respond-to(desktop) {
+
+    .settings {
+        display: none;
+    }
+}

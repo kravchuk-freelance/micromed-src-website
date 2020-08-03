@@ -1,0 +1,113 @@
+.product {
+
+    &--line {
+        
+        .product__list {
+            grid-template-columns: 1fr;
+        }
+
+        .tile {
+            max-width: none;
+
+            &--sale {
+
+                .tile {
+
+                    &__cost {
+
+                        &_sale {
+                            font-size: 2.4rem;
+                            line-height: 2.9rem;
+                        }
+
+                        &_price {
+                            font-size: 1.4rem;
+                            line-height: 1.7rem;
+                        }
+                    }
+                }
+            }
+
+            &__inner {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 4.8% 6% 4.8% 3%;
+
+                .counter {
+                    display: block;
+                }
+            }
+
+            &__link {
+                display: flex;
+                max-width: 775px;
+                margin-bottom: 0;
+            }
+
+            &__photo {
+                max-width: 195px;
+                padding-bottom: 22%;
+                margin-bottom: 0;
+                margin-right: 12.26%;
+            }
+
+            &__title {
+                order: 1;
+                height: auto;
+                width: 100%;
+                max-width: none;
+                margin-bottom: 30px;
+                text-align: left;
+            }
+
+            &__category {
+                order: 0;
+                margin-top: 0;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            &__description {
+                display: flex;
+                flex-direction: column;
+
+                &_short {
+                    order: 1;
+                    display: block;
+                    text-align: left;
+                }
+            }
+
+            &__footer {
+                margin-left: 20px;
+            }
+
+            &__logo {
+                display: block;
+            }
+
+            &__cost {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-end;
+
+                &_price {
+                    font-size: 2.4rem;
+                    line-height: 2.9rem;
+                }
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__item {
+        border-right: 1px solid $gray_1;
+        border-bottom: 1px solid $gray_1;
+    }
+}

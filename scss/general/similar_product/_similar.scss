@@ -1,0 +1,115 @@
+.similar {
+    width: 100%;
+
+    // .tile {
+
+    //     &__cost {
+    //         margin-bottom: 0;
+    //     }
+
+    //     &__cart_link {
+    //         display: none;
+    //     }
+
+    //     &__unavailable_link {
+    //         display: none;
+    //     }
+
+    //     &__discontinued_link {
+    //         display: none;
+    //     }
+    // }
+
+    &__body {
+        width: 100%;
+        border-bottom: 1px solid $gray_1;
+
+        &_list {
+
+            .slick-prev {
+                left: 0;
+                width: 30px;
+                height: 60px;
+                overflow: hidden;
+                z-index: 1;
+
+                &::before {
+                    @include font(20px, 60px, "Montserrat-Medium");
+
+                    content: '<';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 75%;
+                    color: $gray_9;
+                    z-index: 1;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 200%;
+                    height: 100%;
+                    transform: translate(-50%, -50%);
+                    background-color: $gray_1;
+                    border-radius: 50%;
+                }
+            }
+
+            .slick-next {
+                right: 0;
+                width: 30px;
+                height: 60px;
+                overflow: hidden;
+                z-index: 1;
+
+                &::before {
+                    @include font(20px, 60px, "Montserrat-Medium");
+
+                    content: '>';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 75%;
+                    color: $gray_9;
+                    z-index: 1;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 200%;
+                    height: 100%;
+                    transform: translate(50%, -50%);
+                    background-color: $gray_1;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &_item {
+            border-left: 1px solid $gray_1;
+            border-right: 1px solid $gray_1;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        border-top: 1px solid $gray_1;
+        border-bottom: 1px solid $gray_1;
+    }
+
+    &__title {
+        @include adaptiv-font(22, 40, 20, 27, "Montserrat-Regular");
+        // @include font(22px, 40px, "Montserrat-Regular");
+
+        width: 70.46%;
+        color: $black_0;
+    }
+}
